@@ -1,12 +1,23 @@
-var xcode = require('xcode');
-var fs = require('fs');
-var path = require('path');
+var xcode;
+const fs = require('fs');
+const path = require('path');
 
 const xcodeProjPath = fromDir('platforms/ios', '.xcodeproj', false);
 const projectPath = xcodeProjPath + '/project.pbxproj';
 const myProj = xcode.project(projectPath);
 
 module.exports = function(context) {
+    function isCordovaAbove (context, version) {
+      var cordovaVersion = context.opts.cordova.version;
+      console.log(cordovaVersion);
+      var sp = cordovaVersion.split('.');
+      return parseInt(sp[0]) >= version;
+    }
+    if(isCordovaAbove(context,8)){
+      xcode = require('xcode');
+    }else{
+      xcode = context.requireCordovaModule('xcode');
+    }
     var scriptPath = "plugins/cordova-plugin-mvpn/scripts/ios/buildPhase.txt";
     var script = "";
     if(fs.existsSync(scriptPath)){

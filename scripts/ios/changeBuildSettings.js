@@ -4,11 +4,25 @@
 * Disable bitcode for iOS 9 projects.
 */
 
-var fs = require('fs');
-var xcode = require('xcode');
-var path = require('path');
+const fs = require('fs');
+var xcode;
+var semver;
+const path = require('path');
 
 module.exports = function(context) {
+  function isCordovaAbove (context, version) {
+    var cordovaVersion = context.opts.cordova.version;
+    console.log(cordovaVersion);
+    var sp = cordovaVersion.split('.');
+    return parseInt(sp[0]) >= version;
+  }
+  if(isCordovaAbove(context,8)){
+    xcode = require('xcode');
+    semver = require('semver');
+  }else{
+    xcode = context.requireCordovaModule('xcode');
+    semver = context.requireCordovaModule('semver');
+  }
   var projectName, projectPath, xcodeProj;
   var projectRoot = context.opts.projectRoot;
 
@@ -24,8 +38,6 @@ module.exports = function(context) {
 };
 
 function getConfigParser(context, config){
-  var semver = require('semver');
-
   if(semver.lt(context.opts.cordova.version, '5.4.0')) {
     ConfigParser = context.requireCordovaModule('cordova-lib/src/ConfigParser/ConfigParser');
   } else {
