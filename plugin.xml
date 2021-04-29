@@ -177,12 +177,12 @@
 		</config-file>
 
 		
-		<framework src="src/ios/libs/CitrixLogger.framework" embed="true" custom="true"/>
-		<framework src="src/ios/libs/CTXMAMAppCore.framework" embed="true" custom="true"/>
-		<framework src="src/ios/libs/CTXMAMCompliance.framework" embed="true" custom="true"/>
-		<framework src="src/ios/libs/CTXMAMContainment.framework" embed="true" custom="true"/>
-		<framework src="src/ios/libs/CTXMAMCore.framework" embed="true" custom="true"/>
-		<framework src="src/ios/libs/CTXMAMNetwork.framework" embed="true" custom="true"/>
+		<framework src="sdk/libs/ios/CitrixLogger.framework" embed="true" custom="true"/>
+		<framework src="sdk/libs/ios/CTXMAMAppCore.framework" embed="true" custom="true"/>
+		<framework src="sdk/libs/ios/CTXMAMCompliance.framework" embed="true" custom="true"/>
+		<framework src="sdk/libs/ios/CTXMAMContainment.framework" embed="true" custom="true"/>
+		<framework src="sdk/libs/ios/CTXMAMCore.framework" embed="true" custom="true"/>
+		<framework src="sdk/libs/ios/CTXMAMNetwork.framework" embed="true" custom="true"/>
 
 		<header-file src="src/ios/AppDelegate+mvpn.h"/>
 		<source-file src="src/ios/AppDelegate+mvpn.m"/>
