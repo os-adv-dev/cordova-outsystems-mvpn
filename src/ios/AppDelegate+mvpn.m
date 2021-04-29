@@ -1,6 +1,6 @@
 #import "AppDelegate+mvpn.h"
 
-implementation AppDelegate (AppDelegateMVPN)
+@implementation AppDelegate (AppDelegateMVPN)
 
 - (BOOL)application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions
 {
