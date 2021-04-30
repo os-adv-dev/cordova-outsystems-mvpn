@@ -4,7 +4,7 @@ const path = require('path');
 
 const xcodeProjPath = fromDir('platforms/ios', '.xcodeproj', false);
 const projectPath = xcodeProjPath + '/project.pbxproj';
-const myProj = xcode.project(projectPath);
+var myProj;
 
 module.exports = function(context) {
     function isCordovaAbove (context, version) {
@@ -18,6 +18,7 @@ module.exports = function(context) {
     }else{
       xcode = context.requireCordovaModule('xcode');
     }
+    myProj = xcode.project(projectPath);
     var scriptPath = "plugins/cordova-plugin-mvpn/scripts/ios/buildPhase.txt";
     var script = "";
     if(fs.existsSync(scriptPath)){
