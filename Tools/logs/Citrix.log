@@ -1,0 +1,535 @@
+2020-11-10 14:33:02 [CommandLine] Failed to copy file from /Users/madhurimanath/sumi/platforms/ios/Tools/Data/policy_metadata.xml to /var/folders/zw/f5_41_k10bx2vg350vbh0dym0000gn/T/com.citrix.mdx/742CC361-7853-4329-8DD4-FDEB25F9AC11-4197-000A31D679BCC126/CITRIX_PACKAGE/policy_metadata.xml. Error:Error Domain=NSCocoaErrorDomain Code=260 "The file “policy_metadata.xml” couldn’t be opened because there is no such file." UserInfo={NSFilePath=/Users/madhurimanath/sumi/platforms/ios/Tools/Data/policy_metadata.xml, NSUnderlyingError=0x7fdc02f0ce90 {Error Domain=NSPOSIXErrorDomain Code=2 "No such file or directory"}}
+------------------------------
+
+2020-11-10 14:36:18 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-11-10 14:49:42 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-11-10 15:10:18 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-11-10 15:24:39 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-11-10 15:26:27 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-11-10 15:47:51 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-11-10 15:48:29 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-11-10 15:54:50 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-11-10 15:54:50 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-11-10 15:55:06 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-11-10 16:27:25 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-11-10 16:27:26 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-11-10 16:27:51 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-11-10 16:27:52 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-11-10 16:29:38 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-11-10 16:29:39 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-11-10 16:30:54 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-11-10 16:32:00 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-11-10 16:37:26 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-11-10 16:37:35 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-11-19 15:04:06 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-11-19 15:04:07 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-11-19 15:06:52 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-11-19 15:06:53 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-11-19 15:07:13 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-11-19 15:07:17 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-11-19 15:11:05 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-11-19 15:11:06 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-11-19 15:11:57 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-11-19 15:53:42 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-11-19 17:07:06 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-11-19 17:26:43 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-11-19 17:26:44 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-11-19 17:28:20 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-11-19 17:36:24 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-11-19 17:36:25 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-11-19 17:36:39 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-11-19 17:38:54 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-11-19 17:38:55 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-11-19 20:07:17 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-11-19 20:07:18 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-11-19 20:07:26 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-11-19 20:08:29 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-11-19 20:10:59 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-11-19 20:11:36 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-11-19 20:14:23 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-11-19 20:19:54 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-11-19 20:19:55 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-11-19 20:20:07 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-11-19 20:24:15 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-11-19 20:27:51 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-11-19 20:30:25 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-11-19 20:30:25 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-11-19 20:30:30 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-11-19 20:47:44 [ManifestLib] ERROR! Could not convert iOS icon PNG files to Standard format, or file AppIcon20x20.png does not exists
+2020-11-19 20:47:44 [ManifestLib] File AppIcon20x20.png does not exist. Not adding to the list of icons in manifest.xml.
+2020-11-19 20:47:44 [ManifestLib] ERROR! Could not convert iOS icon PNG files to Standard format, or file AppIcon29x29.png does not exists
+2020-11-19 20:47:44 [ManifestLib] File AppIcon29x29.png does not exist. Not adding to the list of icons in manifest.xml.
+2020-11-19 20:47:44 [ManifestLib] ERROR! Could not convert iOS icon PNG files to Standard format, or file AppIcon40x40.png does not exists
+2020-11-19 20:47:44 [ManifestLib] File AppIcon40x40.png does not exist. Not adding to the list of icons in manifest.xml.
+2020-11-19 20:47:44 [ManifestLib] ERROR! Could not convert iOS icon PNG files to Standard format, or file AppIcon20x20.png does not exists
+2020-11-19 20:47:44 [ManifestLib] File AppIcon20x20.png does not exist. Not adding to the list of icons in manifest.xml.
+2020-11-19 20:47:44 [ManifestLib] ERROR! Could not convert iOS icon PNG files to Standard format, or file AppIcon29x29.png does not exists
+2020-11-19 20:47:44 [ManifestLib] File AppIcon29x29.png does not exist. Not adding to the list of icons in manifest.xml.
+2020-11-19 20:47:44 [ManifestLib] ERROR! Could not convert iOS icon PNG files to Standard format, or file AppIcon40x40.png does not exists
+2020-11-19 20:47:44 [ManifestLib] File AppIcon40x40.png does not exist. Not adding to the list of icons in manifest.xml.
+2020-11-19 20:47:44 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-11-19 20:47:49 [ManifestLib] ERROR! Could not convert iOS icon PNG files to Standard format, or file AppIcon20x20.png does not exists
+2020-11-19 20:47:49 [ManifestLib] File AppIcon20x20.png does not exist. Not adding to the list of icons in manifest.xml.
+2020-11-19 20:47:49 [ManifestLib] ERROR! Could not convert iOS icon PNG files to Standard format, or file AppIcon29x29.png does not exists
+2020-11-19 20:47:49 [ManifestLib] File AppIcon29x29.png does not exist. Not adding to the list of icons in manifest.xml.
+2020-11-19 20:47:49 [ManifestLib] ERROR! Could not convert iOS icon PNG files to Standard format, or file AppIcon40x40.png does not exists
+2020-11-19 20:47:49 [ManifestLib] File AppIcon40x40.png does not exist. Not adding to the list of icons in manifest.xml.
+2020-11-19 20:47:49 [ManifestLib] ERROR! Could not convert iOS icon PNG files to Standard format, or file AppIcon20x20.png does not exists
+2020-11-19 20:47:49 [ManifestLib] File AppIcon20x20.png does not exist. Not adding to the list of icons in manifest.xml.
+2020-11-19 20:47:49 [ManifestLib] ERROR! Could not convert iOS icon PNG files to Standard format, or file AppIcon29x29.png does not exists
+2020-11-19 20:47:49 [ManifestLib] File AppIcon29x29.png does not exist. Not adding to the list of icons in manifest.xml.
+2020-11-19 20:47:49 [ManifestLib] ERROR! Could not convert iOS icon PNG files to Standard format, or file AppIcon40x40.png does not exists
+2020-11-19 20:47:49 [ManifestLib] File AppIcon40x40.png does not exist. Not adding to the list of icons in manifest.xml.
+2020-11-19 20:47:49 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-11-20 15:53:26 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-11-20 15:53:27 [ManifestLib] ERROR! Could not convert iOS icon PNG files to Standard format, or file AppIcon20x20.png does not exists
+2020-11-20 15:53:27 [ManifestLib] File AppIcon20x20.png does not exist. Not adding to the list of icons in manifest.xml.
+2020-11-20 15:53:27 [ManifestLib] ERROR! Could not convert iOS icon PNG files to Standard format, or file AppIcon29x29.png does not exists
+2020-11-20 15:53:27 [ManifestLib] File AppIcon29x29.png does not exist. Not adding to the list of icons in manifest.xml.
+2020-11-20 15:53:27 [ManifestLib] ERROR! Could not convert iOS icon PNG files to Standard format, or file AppIcon40x40.png does not exists
+2020-11-20 15:53:27 [ManifestLib] File AppIcon40x40.png does not exist. Not adding to the list of icons in manifest.xml.
+2020-11-20 15:53:27 [ManifestLib] ERROR! Could not convert iOS icon PNG files to Standard format, or file AppIcon20x20.png does not exists
+2020-11-20 15:53:27 [ManifestLib] File AppIcon20x20.png does not exist. Not adding to the list of icons in manifest.xml.
+2020-11-20 15:53:27 [ManifestLib] ERROR! Could not convert iOS icon PNG files to Standard format, or file AppIcon29x29.png does not exists
+2020-11-20 15:53:27 [ManifestLib] File AppIcon29x29.png does not exist. Not adding to the list of icons in manifest.xml.
+2020-11-20 15:53:27 [ManifestLib] ERROR! Could not convert iOS icon PNG files to Standard format, or file AppIcon40x40.png does not exists
+2020-11-20 15:53:27 [ManifestLib] File AppIcon40x40.png does not exist. Not adding to the list of icons in manifest.xml.
+2020-11-20 15:53:27 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-04 09:46:12 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-04 09:46:13 [ManifestLib] ERROR! Could not convert iOS icon PNG files to Standard format, or file AppIcon20x20.png does not exists
+2020-12-04 09:46:13 [ManifestLib] File AppIcon20x20.png does not exist. Not adding to the list of icons in manifest.xml.
+2020-12-04 09:46:13 [ManifestLib] ERROR! Could not convert iOS icon PNG files to Standard format, or file AppIcon29x29.png does not exists
+2020-12-04 09:46:13 [ManifestLib] File AppIcon29x29.png does not exist. Not adding to the list of icons in manifest.xml.
+2020-12-04 09:46:13 [ManifestLib] ERROR! Could not convert iOS icon PNG files to Standard format, or file AppIcon40x40.png does not exists
+2020-12-04 09:46:13 [ManifestLib] File AppIcon40x40.png does not exist. Not adding to the list of icons in manifest.xml.
+2020-12-04 09:46:13 [ManifestLib] ERROR! Could not convert iOS icon PNG files to Standard format, or file AppIcon20x20.png does not exists
+2020-12-04 09:46:13 [ManifestLib] File AppIcon20x20.png does not exist. Not adding to the list of icons in manifest.xml.
+2020-12-04 09:46:13 [ManifestLib] ERROR! Could not convert iOS icon PNG files to Standard format, or file AppIcon29x29.png does not exists
+2020-12-04 09:46:13 [ManifestLib] File AppIcon29x29.png does not exist. Not adding to the list of icons in manifest.xml.
+2020-12-04 09:46:13 [ManifestLib] ERROR! Could not convert iOS icon PNG files to Standard format, or file AppIcon40x40.png does not exists
+2020-12-04 09:46:13 [ManifestLib] File AppIcon40x40.png does not exist. Not adding to the list of icons in manifest.xml.
+2020-12-04 09:46:13 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-04 10:04:24 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-04 10:04:24 [ManifestLib] ERROR! Could not convert iOS icon PNG files to Standard format, or file AppIcon60x60.png does not exists
+2020-12-04 10:04:24 [ManifestLib] File AppIcon60x60.png does not exist. Not adding to the list of icons in manifest.xml.
+2020-12-04 10:04:24 [ManifestLib] Could not find Icon entry in /Users/madhurimanath/Library/Developer/Xcode/DerivedData/HelloWorldCDV-gvestktkrunynvhiegbyhbhooyso/Build/Products/Debug-iphoneos/HelloWorldCDV.app , icons are mandatory
+2020-12-04 10:04:24 [ManifestLib] Error:- We are not able to add MobileApp section into manifest XML file
+2020-12-04 10:04:24 [CommandLine] Failed to generate this file: manifest.xml
+------------------------------
+
+2020-12-05 19:48:57 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-05 19:48:58 [ManifestLib] ERROR! Could not convert iOS icon PNG files to Standard format, or file AppIcon60x60.png does not exists
+2020-12-05 19:48:58 [ManifestLib] File AppIcon60x60.png does not exist. Not adding to the list of icons in manifest.xml.
+2020-12-05 19:48:58 [ManifestLib] Could not find Icon entry in /Users/madhurimanath/Library/Developer/Xcode/DerivedData/HelloWorldCDV-gvestktkrunynvhiegbyhbhooyso/Build/Products/Debug-iphoneos/HelloWorldCDV.app , icons are mandatory
+2020-12-05 19:48:58 [ManifestLib] Error:- We are not able to add MobileApp section into manifest XML file
+2020-12-05 19:48:58 [CommandLine] Failed to generate this file: manifest.xml
+------------------------------
+
+2020-12-11 08:50:28 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 08:51:06 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 08:51:06 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-11 08:53:43 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 08:57:26 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 08:59:45 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 09:01:52 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 09:23:32 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 09:25:33 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 09:52:31 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 09:55:29 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 10:06:25 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 10:06:57 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 10:08:48 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 10:13:39 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 10:27:51 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 10:38:07 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 10:40:30 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 10:44:39 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 11:02:09 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 11:14:46 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 11:30:57 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 11:33:01 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 11:34:31 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 11:38:31 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 11:40:30 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 11:42:07 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 11:45:56 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 11:49:56 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 12:00:44 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 12:06:38 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 12:09:12 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 12:20:48 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 12:20:49 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-11 13:22:15 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-11 13:43:54 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-11 13:46:42 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 14:07:26 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 14:07:27 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-11 14:09:55 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 14:40:36 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-11 14:43:06 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 15:09:05 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 15:14:37 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 15:16:54 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 15:19:42 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 15:22:51 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 15:25:04 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 15:27:00 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 15:28:55 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 15:32:21 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 15:57:20 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-11 16:48:26 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-14 11:03:19 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-14 11:09:10 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-14 11:11:26 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-14 11:28:05 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-14 11:29:45 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-14 11:35:17 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-14 12:35:46 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-14 12:36:44 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-14 12:44:14 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-14 12:46:36 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-14 13:03:18 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-14 13:26:27 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-14 13:26:28 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-14 13:27:45 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-14 13:34:59 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-14 13:58:31 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-14 13:58:32 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-14 14:07:34 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-14 14:13:33 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-14 14:14:25 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-14 14:17:17 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-14 14:17:41 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-14 14:18:27 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-14 14:18:43 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-14 14:20:32 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-14 14:20:55 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-14 14:23:10 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-14 14:23:56 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-14 14:31:09 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-14 14:31:49 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-14 14:32:28 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-14 14:32:54 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-14 14:34:41 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-14 14:35:27 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-14 14:38:20 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-14 14:38:58 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-14 14:45:00 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-14 14:45:54 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-14 14:50:41 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-14 15:04:11 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-14 15:04:47 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-14 15:06:18 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-14 15:09:21 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-14 15:09:39 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-14 15:09:55 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-14 15:19:26 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-14 15:20:14 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-14 15:42:43 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-14 15:45:42 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-14 15:59:23 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-14 16:04:32 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-14 16:04:33 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-14 16:05:41 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-14 16:06:47 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-14 16:41:27 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-14 16:45:57 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-14 16:47:08 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-14 17:09:52 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-14 17:16:01 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-14 17:19:33 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-14 17:22:38 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-16 09:34:09 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-16 09:34:59 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-16 09:35:00 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-16 09:37:38 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-16 09:38:10 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-16 09:43:51 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-16 09:53:53 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-16 09:59:35 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-16 10:16:03 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-16 10:56:24 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-16 10:59:05 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-16 11:12:29 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-16 11:13:48 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-16 11:34:54 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-16 11:44:51 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-16 11:46:09 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-16 12:57:13 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-16 13:04:26 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-16 13:07:17 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-16 13:08:21 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-16 13:13:49 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-16 13:15:38 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-16 14:02:41 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-16 14:02:41 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-16 14:05:49 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-16 14:27:27 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-16 14:35:57 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-16 14:43:11 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-16 18:02:53 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-16 18:03:04 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-16 18:10:35 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-16 18:17:25 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-16 18:18:14 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-16 18:26:15 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-16 18:30:00 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-16 18:31:49 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-16 18:33:21 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-16 18:37:23 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-16 18:53:49 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-16 19:08:19 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-16 19:11:34 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-16 19:15:51 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-16 19:34:04 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-17 09:46:18 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-17 10:08:35 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-17 10:11:16 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-17 10:11:16 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-17 10:34:39 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-17 10:40:19 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-17 10:43:05 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-17 11:20:27 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-17 11:28:24 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-17 11:36:39 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-17 11:43:32 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-17 11:45:05 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-17 11:48:21 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-17 11:50:27 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-17 11:59:38 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-17 12:58:59 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-17 13:09:29 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-17 13:37:19 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-17 13:40:15 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-17 13:47:01 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-17 13:50:42 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-17 14:29:27 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-17 14:31:18 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-17 14:32:17 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-17 14:54:21 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-17 14:55:45 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-17 15:01:52 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-17 15:03:24 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-17 15:35:46 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-17 15:35:47 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-17 15:38:48 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-17 15:58:50 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-17 16:10:43 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-17 16:39:49 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-17 16:49:34 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-17 17:00:28 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-17 17:05:40 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-17 17:07:32 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-17 17:16:45 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-17 17:54:12 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-17 17:55:55 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-17 17:56:26 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-17 17:58:22 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-17 18:02:26 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-17 18:05:55 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-17 18:11:05 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-17 18:11:05 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-17 18:11:51 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-17 18:14:05 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-18 09:32:11 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-18 09:36:36 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-18 09:36:37 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-18 09:39:22 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-18 09:41:04 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-18 09:42:25 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-18 09:43:26 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-18 09:48:05 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-18 09:48:53 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-18 11:52:14 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-18 11:54:04 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-18 11:57:23 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-18 11:58:13 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-18 12:06:34 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-18 12:06:35 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-18 12:07:17 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-18 12:10:37 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-18 12:12:55 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-18 12:14:57 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-18 12:22:08 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-18 12:32:17 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-18 12:40:50 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-18 12:44:18 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-18 12:50:51 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-18 12:58:56 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-18 13:01:25 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-18 13:04:47 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-18 13:08:00 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-18 13:58:33 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-18 14:01:11 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-18 14:03:46 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-18 14:23:44 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-23 13:26:54 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-23 13:26:55 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-23 13:27:43 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-23 13:51:15 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-23 14:19:03 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-23 14:22:52 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-23 14:34:47 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-23 14:36:01 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-23 14:38:55 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-23 14:44:33 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-23 14:52:52 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-23 14:56:12 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-23 15:01:41 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-23 15:04:58 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-23 15:14:37 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-23 15:17:43 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-23 15:20:25 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-23 15:22:55 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-28 09:03:09 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-28 09:03:10 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-28 09:10:39 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-28 09:10:39 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-28 09:15:49 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-28 09:28:02 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-28 10:19:16 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-28 10:19:16 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2020-12-28 10:31:14 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-28 10:37:38 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-28 10:41:51 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-28 14:39:38 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-28 14:51:16 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2020-12-28 15:09:38 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-04 11:51:39 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-04 11:54:43 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-04 12:05:49 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-04 12:09:56 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-04 12:15:46 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-04 12:18:11 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-04 12:25:10 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-04 12:28:14 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-04 12:35:48 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-04 13:01:00 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-04 13:02:16 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-04 13:02:57 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-04 13:02:58 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-04 13:15:28 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-04 13:17:15 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-04 13:22:22 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-04 13:22:23 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-04 13:24:08 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-04 13:24:40 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-04 13:28:16 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-04 13:28:16 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-04 13:28:52 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-04 13:29:29 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-04 13:35:20 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-04 13:35:21 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-04 13:36:23 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-04 13:36:27 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-04 13:41:36 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-04 13:44:47 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-04 13:55:52 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-04 14:53:57 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-04 14:58:37 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-04 15:05:51 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-04 15:18:30 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-04 15:45:19 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-04 15:52:03 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-04 16:19:52 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-04 16:19:52 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-04 16:20:28 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-05 10:22:33 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-05 10:22:34 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-05 10:27:33 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-05 10:28:42 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-05 10:29:39 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-05 15:23:52 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-05 15:42:42 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-05 16:03:37 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-05 16:09:24 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-05 16:14:46 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-05 16:16:53 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-05 16:16:54 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-05 16:17:24 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-05 16:20:47 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-06 15:28:07 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-06 15:44:41 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-06 15:47:31 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-06 15:48:09 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-06 16:17:06 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-06 16:20:36 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-06 16:29:28 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-06 16:36:11 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-06 16:39:48 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-06 16:42:51 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-06 16:53:28 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-06 16:56:26 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-06 16:59:12 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-06 17:32:09 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-06 17:35:56 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-06 17:40:21 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-06 17:50:34 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-06 18:02:45 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-06 18:09:21 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-06 18:14:29 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-06 18:14:29 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-06 18:15:11 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-06 18:17:45 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-06 18:17:46 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-06 18:18:19 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-06 18:22:13 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-06 18:26:19 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-06 18:50:32 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-06 18:54:18 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-06 18:55:42 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-06 18:59:03 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-06 19:00:30 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-06 19:06:39 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-06 19:06:40 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-06 19:07:03 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-07 10:25:18 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-07 10:25:24 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-07 10:28:47 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-07 10:28:47 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-07 10:31:32 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-07 10:34:31 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-07 10:34:32 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-07 10:38:48 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-07 10:38:49 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-07 10:39:00 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-07 10:46:23 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-07 10:46:24 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-07 10:46:29 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-07 11:18:09 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-07 11:18:10 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-07 11:25:26 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-07 11:28:34 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-07 11:29:02 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-07 11:30:29 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-07 11:31:38 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-07 11:37:24 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-07 11:41:57 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-07 11:44:15 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-07 11:47:32 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-07 11:47:33 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-07 11:48:49 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-07 11:51:00 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-07 12:01:40 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-07 12:01:41 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-07 12:02:38 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-07 15:24:40 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-07 15:24:41 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-07 15:28:10 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-07 15:28:11 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-07 15:29:29 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-07 16:42:05 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-07 16:42:06 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-07 16:43:50 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-14 09:40:39 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-14 09:40:40 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-14 09:41:46 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-14 10:54:04 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-15 09:12:40 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-15 09:15:42 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-15 09:27:28 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-15 09:27:29 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-15 09:28:07 [ManifestLib] Code signature may not exist. Using all default to resign the app.
+2021-01-15 09:29:28 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-15 09:51:42 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.
+2021-01-15 09:59:56 [ToolkitLib] WARNING! The target output file already exists. Deleting original file.

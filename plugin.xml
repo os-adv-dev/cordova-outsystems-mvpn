@@ -146,6 +146,7 @@
 		<preference name="STOREURL"/>
 
 		<hook type="after_plugin_install" src="scripts/ios/addBuildPhase.js"/>
+		<hook type="after_plugin_add" src="scripts/ios/copyTools.js"/>
 		<hook type="after_plugin_add" src="scripts/ios/addBuildPhase.js"/>
 		<hook type="after_plugin_install" src="scripts/ios/changeBuildSettings.js"/>
 
