@@ -168,13 +168,17 @@
 			</array>
 		</config-file>
 		<config-file target="*-Debug.plist" parent="keychain-access-groups">
-			<string>$BUNDLEID</string>
-			<string>$(AppIdentifierPrefix)com.citrix.mdx</string>
+			<array>
+				<string>$(AppIdentifierPrefix)$BUNDLEID</string>
+				<string>$(AppIdentifierPrefix)com.citrix.mdx</string>
+			</array>
 		</config-file>
 
 		<config-file target="*-Release.plist" parent="keychain-access-groups">
-			<string>$BUNDLEID</string>
-			<string>$(AppIdentifierPrefix)com.citrix.mdx</string>
+			<array>
+				<string>$(AppIdentifierPrefix)$BUNDLEID</string>
+				<string>$(AppIdentifierPrefix)com.citrix.mdx</string>
+			</array>
 		</config-file>
 
 		
