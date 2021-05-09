@@ -3,7 +3,7 @@ var uuidgen;
 
 // these locations are just for consistency
 module.exports.MdxJson = 'mdx.json';
-module.exports.BuildJson = 'build.json';
+module.exports.BuildJson = '../keys/build.json';
 module.exports.PackageJson = 'package.json';
 module.exports.Entitlements = path.join('platforms', 'ios', 'mdx.entitlements');
 

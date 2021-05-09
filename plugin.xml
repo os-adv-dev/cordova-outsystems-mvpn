@@ -35,12 +35,6 @@
 		<!-- IMPORTANT: this is the mdx wrapper utility file for android -->
 		<resource-file src="sdk/libs/android/managed-app-utility.jar" target="mdx/managed-app-utility.jar"/>
 
-		<!-- if the platform is added after the plugin is install -->
-		<hook type="after_platform_add" src="scripts/android/android_setup_mdx.js"/>
-
-		<!-- if the plugin is installed after the platform is added -->
-		<hook type="after_plugin_add" src="scripts/android/android_setup_mdx.js"/>
-
 		<hook type="before_compile" src="scripts/android/android_setup_mdx.js"/>
 		<!-- hook - this generates the mdx file for the user -->
 		<hook type="after_compile" src="scripts/android/android_generate_mdx.js"/>
