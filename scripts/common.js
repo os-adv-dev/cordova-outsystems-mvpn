@@ -1,11 +1,23 @@
 const path = require('path');
-const uuidgen = require('uuid/v4');
+var uuidgen;
 
 // these locations are just for consistency
 module.exports.MdxJson = 'mdx.json';
 module.exports.BuildJson = 'build.json';
 module.exports.PackageJson = 'package.json';
 module.exports.Entitlements = path.join('platforms', 'ios', 'mdx.entitlements');
+
+module.exports = function(context) {
+
+	if(isCordovaAbove(context,8)){
+		uuidgen = require('uuid/v4');
+	}else{
+		uuidgen = context.requireCordovaModule('uuid/v4');
+	}
+
+
+}
+
 
 // function that just generates a random number
 module.exports.rand = () => uuidgen().split('-').join('');
@@ -40,3 +52,9 @@ function get_color_code(color) {
 	if (color === 'cyan') return '\x1b[36m';
 	return '\x1b[37m';
 }
+function isCordovaAbove (context, version) {
+	var cordovaVersion = context.opts.cordova.version;
+	console.log(cordovaVersion);
+	var sp = cordovaVersion.split('.');
+	return parseInt(sp[0]) >= version;
+  }

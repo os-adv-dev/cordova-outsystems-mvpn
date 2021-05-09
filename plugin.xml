@@ -23,6 +23,8 @@
 		<clobbers target="cemwindow.open"/>
 	</js-module>
 
+	<hook type="before_plugin_add" src="scripts/outsystems/npmInstall.js"/>
+
 	<!--android-->
 	<platform name="android">
 		<!-- IMPORTANT: this is the mdx wrapper utility file for android -->

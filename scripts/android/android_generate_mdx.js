@@ -3,7 +3,7 @@ const path = require('path');
 
 const common = require('../common');
 const log = common.log;
-var nopt = require('nopt');
+var nopt;
 /**
  * This hook generates the .mdx file based on the preferences declared in project/mdx.json.
  * Currently it requires all arguments to be declared in the mdx.json
@@ -16,6 +16,13 @@ var nopt = require('nopt');
 module.exports = function(context) {
 	log();
 	log('===== CREATING MDX FOR ANDROID =====', 'cyan');
+
+	var cordovaAbove8 = isCordovaAbove(context, 8);
+	if (cordovaAbove8) {
+		nopt = require('nopt');
+	}else{
+		nopt = context.requireCordovaModule('nopt');
+	}
 
 	process.chdir(context.opts.projectRoot);
 
@@ -203,4 +210,11 @@ function platformRelativePath(pp) {
 		res = path.join(absolute_base, res);
 	}
 	return path.normalize(res);
+}
+
+function isCordovaAbove (context, version) {
+	var cordovaVersion = context.opts.cordova.version;
+	console.log(cordovaVersion);
+	var sp = cordovaVersion.split('.');
+	return parseInt(sp[0]) >= version;
 }
