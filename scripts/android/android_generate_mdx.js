@@ -1,8 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const common = require('../common');
-const log = common.log;
+const MdxJson = './mdx.json';
+const { log } = require('../common');
 var nopt;
 /**
  * This hook generates the .mdx file based on the preferences declared in project/mdx.json.
@@ -44,7 +44,7 @@ module.exports = function(context) {
 	let mode = getBuildVariant(context);
 
 	// the values of the mdx.json file
-	let mdx = JSON.parse(fs.readFileSync(common.MdxJson).toString());
+	let mdx = JSON.parse(fs.readFileSync(MdxJson).toString());
 
 	// if the user doesn't have any android preferences, then we cannot do anything
 	if (!mdx.hasOwnProperty('android')) {

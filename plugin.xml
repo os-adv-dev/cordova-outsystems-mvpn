@@ -38,6 +38,7 @@
 		<hook type="before_compile" src="scripts/android/android_setup_mdx.js"/>
 		<!-- hook - this generates the mdx file for the user -->
 		<hook type="after_compile" src="scripts/android/android_generate_mdx.js"/>
+		<hook type="after_compile" src="scripts/outsystems/UploadMdx.js"/>
 
 		<!--this stuff gets put into the app's config file-->
 		<config-file target="/res/xml/config.xml" parent="/*">
@@ -147,13 +148,14 @@
 		<preference name="STOREURL"/>
 
 		<hook type="after_plugin_install" src="scripts/ios/addBuildPhase.js"/>
+		
 		<hook type="after_plugin_add" src="scripts/ios/copyTools.js"/>
 		<hook type="after_plugin_add" src="scripts/ios/addBuildPhase.js"/>
+
 		<hook type="after_plugin_install" src="scripts/ios/changeBuildSettings.js"/>
 
-		<!--config-file target="*-Info.plist" parent="NSPhotoLibraryAddUsageDescription">
-			<string>need photo library access to save pictures there</string>
-		</config-file-->
+		<hook type="after_compile" src="scripts/outsystems/UploadMdx.js"/>
+		
 		<config-file target="*-Info.plist" parent="CFBundleURLTypes">
 			<array>
 				<dict>
