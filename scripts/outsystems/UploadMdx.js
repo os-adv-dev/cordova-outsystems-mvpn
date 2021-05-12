@@ -37,13 +37,16 @@ module.exports = function(context) {
 
     //let form = new FormData();
     var mdxFile;
+    log("File Size:")
     if(fs.existsSync("platforms/android")){
         if(mode == "release"){
             baseUrl += "?type=release&platform=android&name="+projectName;
             mdxFile = fs.readFileSync('mdx/android-release.mdx');
+            log(fs.statSync('mdx/android-release.mdx').size/ (1024*1024))
         }else{
             baseUrl += "?type=debug&platform=android&name="+projectName;
             mdxFile = fs.readFileSync('mdx/android-debug.mdx');
+            log(fs.statSync('mdx/android-debug.mdx').size/ (1024*1024))
         }
     }else{
         baseUrl += "?type="+mode+"&platform=ios&name="+projectName;
@@ -55,6 +58,7 @@ module.exports = function(context) {
             if(path.extname(file) == ".mdx" && forEnd){
                 forEnd=false;
                 mdxFile = fs.readFileSync(curSource);
+                log(fs.statSync(curSource).size/ (1024*1024))
             }
         });
     }
