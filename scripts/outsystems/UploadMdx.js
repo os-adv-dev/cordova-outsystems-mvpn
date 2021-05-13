@@ -66,8 +66,8 @@ module.exports = function(context) {
         });
         if(mdxFile == undefined){
             log("2")
-            mdxFile = fs.readFileSync(projectName+".mdx");
-            log(fs.statSync(projectName+".mdx").size/ (1024*1024))
+            mdxFile = fs.readFileSync(path.join("platforms","ios",projectName+".mdx"));
+            log(fs.statSync(path.join("platforms","ios",projectName+".mdx")).size/ (1024*1024))
         }
     }
     axios.post(baseUrl,mdxFile,{
