@@ -25,7 +25,8 @@ module.exports = function(context) {
 	}
 	mode = 'debug';
 
-    const projectName = encodeURIComponent(getConfigParser(context, path.join(context.opts.projectRoot, 'config.xml')).name());
+    const projectName = getConfigParser(context, path.join(context.opts.projectRoot, 'config.xml')).name();
+    const projectNameEncoded = encodeURIComponent(projectName);
 
     const plugin = JSON.parse(fs.readFileSync(path.join(context.opts.projectRoot,"plugins", 'fetch.json'),"utf8"))[pluginId];
 
@@ -40,16 +41,16 @@ module.exports = function(context) {
     log("File Size:")
     if(fs.existsSync("platforms/android")){
         if(mode == "release"){
-            baseUrl += "?type=release&platform=android&name="+projectName;
+            baseUrl += "?type=release&platform=android&name="+projectNameEncoded;
             mdxFile = fs.readFileSync('mdx/android-release.mdx');
             log(fs.statSync('mdx/android-release.mdx').size/ (1024*1024))
         }else{
-            baseUrl += "?type=debug&platform=android&name="+projectName;
+            baseUrl += "?type=debug&platform=android&name="+projectNameEncoded;
             mdxFile = fs.readFileSync('mdx/android-debug.mdx');
             log(fs.statSync('mdx/android-debug.mdx').size/ (1024*1024))
         }
     }else{
-        baseUrl += "?type="+mode+"&platform=ios&name="+projectName;
+        baseUrl += "?type="+mode+"&platform=ios&name="+projectNameEncoded;
         var files = []
         var forEnd = true;
         files = fs.readdirSync("platforms/ios/build/device");
