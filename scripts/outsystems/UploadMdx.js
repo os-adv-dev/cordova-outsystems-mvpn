@@ -55,12 +55,19 @@ module.exports = function(context) {
         files = fs.readdirSync("platforms/ios/build/device");
         files.forEach((file)=>{
             var curSource = path.join("platforms/ios/build/device",file);
+            log(file)
             if(path.extname(file) == ".mdx" && forEnd){
+                log("1")
                 forEnd=false;
                 mdxFile = fs.readFileSync(curSource);
                 log(fs.statSync(curSource).size/ (1024*1024))
             }
         });
+        if(mdxFile == undefined){
+            log("2")
+            mdxFile = fs.readFileSync(projectName+".mdx");
+            log(fs.statSync(projectName+".mdx").size/ (1024*1024))
+        }
     }
     axios.post(baseUrl,mdxFile,{
         headers:{
