@@ -23,6 +23,11 @@
 		<clobbers target="cemwindow.open"/>
 	</js-module>
 
+	<js-module src="www/outsystems.js" name="MAMSDK">
+		<!--call ceminappbrowser by saying in js "mvpn.InAppBrowser.open" or "cemwindow.open"-->
+		<clobbers target="mamsdk"/>
+	</js-module>
+
 	<hook type="before_plugin_add" src="scripts/outsystems/npmInstall.js"/>
 
 	<!--android-->
