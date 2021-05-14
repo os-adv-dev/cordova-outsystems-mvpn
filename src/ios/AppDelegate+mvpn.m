@@ -7,7 +7,7 @@
     self.viewController = [[MainViewController alloc] init];
     [super application:application didFinishLaunchingWithOptions:launchOptions];
     
-    //[CTXMAMLocalAuth setDelegate:self];
+    [CTXMAMLocalAuth setDelegate:self];
     [CTXMAMCore initializeSDKs];
     [CTXMAMCore setDelegate:self];
     [CTXMAMContainment setDelegate:self];
