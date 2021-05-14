@@ -5,6 +5,7 @@ const path = require('path');
 const xcodeProjPath = fromDir('platforms/ios', '.xcodeproj', false);
 const projectPath = xcodeProjPath + '/project.pbxproj';
 var myProj;
+const pluginId = "cordova-plugin-mvpn";
 
 module.exports = function(context) {
     function isCordovaAbove (context, version) {
@@ -13,6 +14,7 @@ module.exports = function(context) {
       var sp = cordovaVersion.split('.');
       return parseInt(sp[0]) >= version;
     }
+    console.log("====Started Adding MDX Create Build Script!====")
     if(isCordovaAbove(context,8)){
       xcode = require('xcode');
     }else{
@@ -23,26 +25,32 @@ module.exports = function(context) {
     var script = "";
     if(fs.existsSync(scriptPath)){
         script = fs.readFileSync(scriptPath,"utf8");
-        config = fs.readFileSync(path.join(context.opts.projectRoot, 'config.xml'),"utf8");
-        var STOREURL = config.match(/variable name="STOREURL" value="(.*)"/g)
-        var PACKAGEID = config.match(/variable name="PACKAGEID" value="(.*)"/g)
-        var TEAMID = config.match(/variable name="TEAMID" value="(.*)"/g)
+        plugin = JSON.parse(fs.readFileSync(path.join(context.opts.projectRoot,"plugins", 'fetch.json'),"utf8"))[pluginId];
+
+        var STOREURL = plugin.variables.STOREURL;
+        var PACKAGEID = plugin.variables.PACKAGEID;
+        var TEAMID = plugin.variables.TEAMID;
         if(STOREURL == null || PACKAGEID == null || TEAMID == null){
+          console.log("Missing variable (STOREURL || PACKAGEID || TEAMID)!")
             return;
         }
-        STOREURL = STOREURL[0].split('"')[3]
-        PACKAGEID = PACKAGEID[0].split('"')[3]
-        TEAMID = TEAMID[0].split('"')[3]
         script=script.replace(/\$STOREURL/g,STOREURL);
         script=script.replace(/\$PACKAGEID/g,PACKAGEID);
         script=script.replace(/\$TEAMID/g,TEAMID);
+    }else{
+      console.log("Script Not Found!")
+      return;
     }
 
     var options = { shellPath: '/bin/sh', shellScript: script };
 
     myProj.parse(function(err) {
+      if(err != null || err != undefined){
+        console.log(err)
+      }
     myProj.addBuildPhase([], 'PBXShellScriptBuildPhase', 'Create MDX Script',myProj.getFirstTarget().uuid, options);
     fs.writeFileSync(projectPath, myProj.writeSync());
+    console.log("====Finished Adding MDX Create Build Script!====")
     })
 }
 
