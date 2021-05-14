@@ -36,8 +36,7 @@ static const NSInteger CTXMAMNotificationCode_Base_CTXMAMContainment = 3000;
 @brief CTXMAMContainment SDK related notification codes.
 */
 typedef enum {
-    CTXAlertAppContainment_None = 0,  /* Returned as invalid or unspecified notification code */
-    CTXAlertAppContainment = (int)(CTXMAMNotificationCode_Base_CTXMAMContainment),
+    CTXAlertAppContainment_None = (int)(CTXMAMNotificationCode_Base_CTXMAMContainment),
     CTXAlertAppContainment_DISABLECOPY,
     CTXAlertAppContainment_DISABLEPASTE,
     CTXAlertAppContainment_DISABLEOPENIN,
@@ -51,18 +50,18 @@ typedef enum {
     CTXAlertAppContainment_DISABLEMIC,
     CTXAlertAppContainment_DISABLE_SOCIAL_MEDIA,
     CTXAlertAppContainment_INBOUNDDOCEX,
-    CTXAlertGeofenceLocationServicesRequired,
-    CTXAlertGeofenceOutsideOfAcceptedArea,
-    CTXAlertWorxMailNotInstalled,
-    CTXAlertWorxMailUpgrade,
-    CTXAlertMailBlocked,
-    CTXAlert_NUM_MAX
+    CTXAlertAppContainment_GEOFENCE_LocationServicesRequired,
+    CTXAlertAppContainment_GEOFENCE_OutsideOfAcceptedArea,
+    CTXAlertAppContainment_SECUREMAIL_NotInstalled,
+    CTXAlertAppContainment_SECUREMAIL_Upgrade,
+    CTXAlertAppContainment_MAILBLOCKED,
+    CTXAlertAppContainment_Unknown
 } CTXMAMContainmentNotificationCodes;
 
 /*!
 @brief Defines a source identifier, which encompasses all notifications originating from the CTXMAMContainment SDK.
 */
-static CTXMAMNotificationSource CTXMAMNotificationSource_Containment = @"CTXMAMNotificationSource_Containment";
+extern CTXMAMNotificationSource const CTXMAMNotificationSource_Containment;
 
 /*!
  @brief A protocol to be implemented to enable an app to receive callbacks from the CTXMAMContainment SDK.

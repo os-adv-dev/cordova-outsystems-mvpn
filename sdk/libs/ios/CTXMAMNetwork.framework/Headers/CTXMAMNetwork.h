@@ -39,7 +39,7 @@ typedef enum vpnErrorReturnType {
     
 } vpnErrorReturnType;
 
-static CTXMAMNotificationSource CTXMAMNotificationSource_Network = @"CTXMAMNotificationSource_Network";
+extern CTXMAMNotificationSource const CTXMAMNotificationSource_Network;
 
 /*!
  @brief Protocol to be implemented when you want your app to receive call backs for different mVPN error scenarios.

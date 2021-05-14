@@ -47,7 +47,7 @@ xsi:schemaLocation="http://www.citrix.com/MobileAppPolicies MobileAppPolicyMetad
     
     <Policies>
         <Policy>
-            <PolicyName>MvpnNetworkAccess</PolicyName>
+            <PolicyName>MamSdkMvpnNetworkAccess</PolicyName>
             <PolicyType>enum</PolicyType>
             <PolicyEnumValues>
                 <PolicyEnumValue>
@@ -72,18 +72,10 @@ xsi:schemaLocation="http://www.citrix.com/MobileAppPolicies MobileAppPolicyMetad
             <PolicyStrings>
                 <Title res_id="NETWORK_ACCESS_TITLE">Network access</Title>
 
-                <!-- <ShortDesc res_id="NETWORK_ACCESS_SHORTDESC">Block, permit, or redirect application network access</ShortDesc> -->
+                <!-- <ShortDesc res_id="MDX_SDK_MVPN_NETWORK_ACCESS_SHORTDESC">Block, permit, or redirect application network access</ShortDesc> -->
 
-                <Description res_id="MVPN_NETWORK_ACCESS_DESC">
-                    Prevents, permits or redirects app’s network access.
-
-                    If Unrestricted, no restrictions are placed on network access.
-                    If Blocked, all network access is blocked.
-                    If one of the Tunneled modes is selected, a per-app VPN tunnel in this initial mode is created back to the enterprise network and Citrix Gateway split tunnel settings are used.
-                    Citrix recommends Tunneled Full VPN for connections that employ client certificates or end-to-end SSL to a resource in the enterprise network and Tunneled Web SSO for connections that require single sign-on (SSO).
-                    Tunneled Full VPN and Web SSO permits switching between VPN modes automatically as needed. If a network request fails due to an authentication request which cannot be handled in a specific VPN mode, it is retried in an alternate mode. Tunneled Full VPN mode can accommodate server challenges for client certificates but not when using Tunneled Web SSO. Similarly, HTTP authentication challenges are more likely to be serviced with single sign-on when using Tunneled Web SSO mode.
-
-                    This policy replaces the previous Network Access, Preferred VPN Mode, and Permit VPN Mode Switching policies. You can still use your previous settings by selecting the Use Previous Settings option. The Use Previous Settings option is not available in Intune. Citrix strongly recommends you update this policy to one of the new values.
+                <Description res_id="MDX_SDK_MVPN_NETWORK_ACCESS_DESC">
+                    Prevents, permits or redirects app network activity. If Unrestricted, no restrictions are placed on the network access. If Tunneled to the internal network, a per-app VPN tunnel back to the internal network is used for all network access and Citrix ADC split tunnel settings are used.
                 </Description>
             </PolicyStrings>
         </Policy>
