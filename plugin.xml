@@ -193,6 +193,13 @@
 		<framework src="sdk/libs/ios/CTXMAMCore.framework" embed="true" custom="true"/>
 		<framework src="sdk/libs/ios/CTXMAMNetwork.framework" embed="true" custom="true"/>
 		<framework src="sdk/libs/ios/CTXMAMLocalAuth.framework" embed="true" custom="true"/>
+		
+		<source-file src="sdk/libs/ios/CitrixLogger.framework" target-dir="lib" framework="true"/>
+		<source-file src="sdk/libs/ios/CTXMAMAppCore.framework" target-dir="lib" framework="true"/>
+		<source-file src="sdk/libs/ios/CTXMAMCompliance.framework" target-dir="lib" framework="true"/>
+		<source-file src="sdk/libs/ios/CTXMAMContainment.framework" target-dir="lib" framework="true"/>
+		<source-file src="sdk/libs/ios/CTXMAMCore.framework" target-dir="lib" framework="true"/>
+		<source-file src="sdk/libs/ios/CTXMAMNetwork.framework" target-dir="lib" framework="true"/>
 
 		<header-file src="src/ios/AppDelegate+mvpn.h"/>
 		<source-file src="src/ios/AppDelegate+mvpn.m"/>
