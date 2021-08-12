@@ -41,6 +41,8 @@ dependencies {
 	implementation(name:'securestorage', ext:'aar')
 	implementation(name:'workspacehelperlib', ext:'aar')
 
+	implementation 'com.google.code.findbugs:jsr305:1.3.9'
+
 	implementation 'com.linkedin.dexmaker:dexmaker:2.19.1'
 	implementation "com.squareup.okhttp3:okhttp:$okhttp3_version"
 	implementation "com.squareup.okhttp3:okhttp-urlconnection:$okhttp3_version"
