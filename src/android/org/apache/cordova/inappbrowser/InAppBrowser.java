@@ -1,6 +1,6 @@
 /*
     This class was modified from Original org.apache.cordova.inappbrowser.InAppBrowser class to support mVPN tunnelling.
-    Developers need to uninstall existing InAppBrowser plugin before using cordova-plugin-mvpn. This plugin has support for InAppBrowser.
+    Developers need to uninstall existing InAppBrowser plugin before using cordova-plugin-android-mvpn. This plugin has support for InAppBrowser.
 */
 package org.apache.cordova.inappbrowser;
 
@@ -51,6 +51,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.citrix.mvpn.cordova.inappbrowser.ManagedWebView;
+import com.citrix.mvpn.cordova.webviewowner.MvpnWebViewOwnerImpl;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.Config;
@@ -917,6 +918,9 @@ public class InAppBrowser extends CordovaPlugin {
 
                 // WebView
                 inAppWebView = new ManagedWebView(cordova.getActivity());
+                if (MvpnWebViewOwnerImpl.getInstance() == null) {
+                    MvpnWebViewOwnerImpl.createOrInstance(cordova.getActivity());
+                }
                 inAppWebView.setLayoutParams(new LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));
                 inAppWebView.setId(Integer.valueOf(6));
                 // File Chooser Implemented ChromeClient

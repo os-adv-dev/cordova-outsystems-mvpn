@@ -9,16 +9,15 @@ import android.os.Messenger;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.citrix.sdk.appcore.api.MamSdk;
+import androidx.annotation.VisibleForTesting;
+
 import com.citrix.mvpn.api.MicroVPNSDK;
 import com.citrix.mvpn.api.ResponseStatusCode;
 import com.citrix.mvpn.cordova.webviewrequests.WebViewRequest;
-import com.citrix.sdk.logging.api.LoggingAPI;
+import com.citrix.sdk.logging.api.Logger;
 
 import java.util.LinkedList;
 import java.util.List;
-
-import org.apache.cordova.inappbrowser.InAppBrowser;
 
 // TODO: add proper behavior to make sure that constant session expiration doesn't result in infinite loop.
 // TODO: update to fix breaking changes from MVPNSDK
@@ -28,7 +27,7 @@ import org.apache.cordova.inappbrowser.InAppBrowser;
  * {@link OwnedMvpnWebView}s to ensure that their network requests
  * use the MVPN. Uses a Boolean to track whether a WebView has been
  * enabled. Tracks all network requests that have not gone through
- * the MVPN tunnel yet, and until the tunnel starts, tells owned 
+ * the MVPN tunnel yet, and until the tunnel starts, tells owned
  * WebViews to load a blank url. Also acts as the Handler for the
  * MVPNSDK. Is a singleton to ensure that this is the only Handler
  * for the MVPNSDK, and to ensure that all {@link WebViewRequest requests}
@@ -39,11 +38,11 @@ public class MvpnWebViewOwnerImpl extends Handler implements MvpnWebViewOwner {
     private static MvpnWebViewOwnerImpl instance;
     private final Activity mActivity;
     private final List<WebViewRequest> requests;
-    private LoggingAPI logger = MamSdk.getLogger();
+    private Logger logger = Logger.getLogger(TAG);
 
     /**
-     * Requires an {@link android.app.Activity Activity} for the 
-     * MVPNSDK. Passes the main looper to the Handler's constructor 
+     * Requires an {@link android.app.Activity Activity} for the
+     * MVPNSDK. Passes the main looper to the Handler's constructor
      * to make sure that it doesn't get garbage collected.
      *
      * @param activity the Activity that this app is running in
@@ -57,11 +56,22 @@ public class MvpnWebViewOwnerImpl extends Handler implements MvpnWebViewOwner {
         this.runStartTunnel();
     }
 
+    @VisibleForTesting
+    public static void setInstance(MvpnWebViewOwnerImpl input) {
+        instance = input;
+    }
+
+    @VisibleForTesting
+    public void removeRequests() {
+        if (requests != null && requests.size() > 0) {
+            requests.remove(0);
+        }
+    }
     /**
      * Creates an instance of this if it doesn't already exist. The
      * {@link android.content.Context Context} is supposed to be an
      * {@link android.app.Activity Activity}, since that is required
-     * by the MVPNSDK. Luckily, 
+     * by the MVPNSDK. Luckily,
      * {@link org.apache.cordova.CordovaActivity CordovaActivity}
      * passes itself indirectly to this method as the Context.
      *
@@ -92,9 +102,9 @@ public class MvpnWebViewOwnerImpl extends Handler implements MvpnWebViewOwner {
      * blocked, a requirement of the MVPNSDK.
      */
     private void runStartTunnel() {
-        logger.debug(TAG, "Calling startTunnel");
+        logger.debug1(TAG, "Calling startTunnel");
         MicroVPNSDK.startTunnel(mActivity, new Messenger(instance));
-        logger.debug(TAG, "Finished startTunnel call");
+        logger.debug1(TAG, "Finished startTunnel call");
     }
 
     /**
@@ -103,7 +113,8 @@ public class MvpnWebViewOwnerImpl extends Handler implements MvpnWebViewOwner {
      * at the end of the queue to try again later. Doesn't stop running until all requests have been
      * processed.
      */
-    private void catchUp() {
+    @VisibleForTesting
+    public void catchUp() {
         WebViewRequest request = null;
         while (requests.size() > 0) {
             request = requests.remove(0);
@@ -130,7 +141,7 @@ public class MvpnWebViewOwnerImpl extends Handler implements MvpnWebViewOwner {
                 break;
             case START_TUNNEL_FAILED:
                 logger.error(TAG, "Tunnel failed to start.");
-                throw new IllegalStateException("Tunnel failed to start");
+                break;
             case TUNNEL_ALREADY_RUNNING:
                 logger.warning(TAG, "Tunnel already running. Continuing...");
                 break;
@@ -140,10 +151,10 @@ public class MvpnWebViewOwnerImpl extends Handler implements MvpnWebViewOwner {
                 break;
             case FOUND_NON_WEBSSO_MODE:
                 logger.error(TAG, "Cannot start tunnel for NetworkAccess mode other than Tunneled - Web SSO!!!");
-                throw new IllegalStateException("Cannot start tunnel for NetworkAccess mode other than Tunneled - Web SSO!!!");
+                break;
             case FOUND_NON_MANAGED_APP:
                 logger.error(TAG, "Could not retrieve policies!!! \n This could be because of the following reasons: \n\t 1. SecureHub is not installed.\n\t 2. SecureHub enrollment is not completed.\n\t 3. App is not managed through CEM.");
-                throw new IllegalStateException("Could not retrieve policies!!! \n This could be because of the following reasons: \n\t 1. SecureHub is not installed.\n\t 2. SecureHub enrollment is not completed.\n\t 3. App is not managed through CEM.");
+                break;
             case NO_NETWORK_CONNECTION:
                 logger.error(TAG, "No network connection detected by MVPNSDK. Showing toast...");
                 Toast.makeText(mActivity, "No network connection detected. Please re-connect to the internet and try again.", Toast.LENGTH_LONG).show();

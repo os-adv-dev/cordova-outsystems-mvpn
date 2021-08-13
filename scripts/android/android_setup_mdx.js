@@ -1,10 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const MdxJson = './mdx.json';
-const BuildJson = '../keys/build.json';
-const PackageJson = './package.json';
-const { log } = require('../common');
+const common = require('../common');
+const log = common.log;
 
 /**
  * Sets up project/mdx.json with default wrapping arguments for android
@@ -18,7 +16,7 @@ module.exports = function(context) {
 	process.chdir(context.opts.projectRoot);
 
 	// if project/package.json does not exist here, then this shouldn't be a cordova project
-	if (!fs.existsSync(PackageJson)) {
+	if (!fs.existsSync(common.PackageJson)) {
 		log('No package.json detected. Are you sure this is a Cordova project?', 'red');
 		return done();
 	}
@@ -31,7 +29,7 @@ module.exports = function(context) {
 	// store the defaults as the result to use
 	let mdxWrappingProperties = defaultProperties;
 	// if project/build.json exists, try to get arguments from there
-	if (fs.existsSync(BuildJson)) {
+	if (fs.existsSync(common.BuildJson)) {
 	    mdxWrappingProperties = readBuildJson(defaultProperties);
 	}
 	// if there was an issue reading from build.json, restore the last successful object
@@ -43,7 +41,7 @@ module.exports = function(context) {
 	// if we have mdx.json, get any arguments declared there.
 	// doing this after the other two methods allows us to keep whatever is
 	// defined in mdx.json, but add arguments in case they aren't defined
-	if (fs.existsSync(MdxJson)) {
+	if (fs.existsSync(common.MdxJson)) {
 	    mdxWrappingProperties = readMdxJson(mdxWrappingProperties);
 	}
 	// if unsuccessful, restore from the cached object
@@ -52,7 +50,7 @@ module.exports = function(context) {
 	}
 
 	// write the result
-	fs.writeFileSync(MdxJson, JSON.stringify(mdxWrappingProperties, null, 4));
+	fs.writeFileSync(common.MdxJson, JSON.stringify(mdxWrappingProperties, null, 4));
 	return done();
 }
 
@@ -90,7 +88,7 @@ function overrideMdxWrappingProperties(src, tgt) {
  */
 function readMdxJson(mdxWrappingProperties) {
 	// read from mdx.json
-	let mdxJson = JSON.parse(fs.readFileSync(MdxJson).toString());
+	let mdxJson = JSON.parse(fs.readFileSync(common.MdxJson).toString());
 	// if there is no android, just get the other build settings for retention and return out
 	if (!mdxJson.hasOwnProperty('android')) {
 		obj = overrideMdxWrappingProperties(mdxJson, mdxWrappingProperties);
@@ -106,7 +104,7 @@ function readMdxJson(mdxWrappingProperties) {
  */
 function readBuildJson(defaultProperties) {
 	// get build.json
-	let build = JSON.parse(fs.readFileSync(BuildJson).toString());
+	let build = JSON.parse(fs.readFileSync(common.BuildJson).toString());
 	// if no android values, we don't care what's here so quit
 	if (!build.hasOwnProperty('android')) {
 	    return defaultProperties;
@@ -160,7 +158,7 @@ function readBuildJson(defaultProperties) {
  * Returns the default values of an mdx.json file that only contains android options
  */
 function getMdxWrappingDefaultProperties() {
-	let pkg = JSON.parse(fs.readFileSync(PackageJson).toString());
+	let pkg = JSON.parse(fs.readFileSync(common.PackageJson).toString());
 	if (!pkg.hasOwnProperty('name')) {
 		log('No app identifier defined in package.json. Are you sure this is a Cordova project?', 'red');
 		return 0;

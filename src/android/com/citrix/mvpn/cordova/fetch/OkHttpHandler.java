@@ -3,11 +3,10 @@ package com.citrix.mvpn.cordova.fetch;
 import android.content.Context;
 import android.util.Log;
 
-import com.citrix.sdk.appcore.api.MamSdk;
 import com.citrix.mvpn.api.MicroVPNSDK;
 import com.citrix.mvpn.exception.ClientConfigurationException;
 import com.citrix.mvpn.exception.NetworkTunnelNotStartedException;
-import com.citrix.sdk.logging.api.LoggingAPI;
+import com.citrix.sdk.logging.api.Logger;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.PluginResult;
@@ -31,7 +30,7 @@ public class OkHttpHandler implements HttpHandler<Request, Response> {
     private static final String TAG = "MVPN-CDV-OkHttpHandler";
     private OkHttpClient httpClient;
     private Context context;
-    private LoggingAPI logger = MamSdk.getLogger();
+    private Logger logger = Logger.getLogger(TAG);
 
     public OkHttpHandler(OkHttpClient httpClient, Context context) {
         this.httpClient = httpClient;
@@ -45,10 +44,8 @@ public class OkHttpHandler implements HttpHandler<Request, Response> {
         try {
             httpClient = (OkHttpClient) MicroVPNSDK.enableOkHttpClientObjectForNetworkTunnel(context, httpClient);
             logger.debug10(TAG, "MicroVPN enableOkHttpClientObject returned");
-        } catch (NetworkTunnelNotStartedException e) {
-            logger.error(TAG, "Network tunnel exception");
-        } catch (ClientConfigurationException e) {
-            logger.error(TAG, "ClientConfig Exception" + e.getMessage() + e);
+        } catch (NetworkTunnelNotStartedException |  ClientConfigurationException e) {
+            logger.error(TAG, "Tunnel Exception" + e.getMessage() + e);
         }
 
         try {
@@ -67,10 +64,8 @@ public class OkHttpHandler implements HttpHandler<Request, Response> {
         try {
             httpClient = (OkHttpClient) MicroVPNSDK.enableOkHttpClientObjectForNetworkTunnel(context, httpClient);
             logger.debug10(TAG, "MicroVPN enableOkHttpClientObject returned");
-        } catch (NetworkTunnelNotStartedException e) {
-            logger.error(TAG, "Network tunnel exception");
-        } catch (ClientConfigurationException e) {
-            logger.error(TAG, "ClientConfig Exception" + e.getMessage() + e);
+        } catch (NetworkTunnelNotStartedException |  ClientConfigurationException e) {
+            logger.error(TAG, "Tunnel Exception" + e.getMessage() + e);
         }
 
         if (httpClient != null) {

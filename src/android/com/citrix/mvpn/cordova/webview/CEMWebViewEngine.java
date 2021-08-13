@@ -6,7 +6,7 @@ import android.util.Log;
 import org.apache.cordova.CordovaPreferences;
 import org.apache.cordova.engine.SystemWebViewEngine;
 
-import com.citrix.sdk.appcore.api.MamSdk;
+import com.citrix.sdk.logging.api.Logger;
 /**
  * Creates an instance of a {@link CEMWebView CEMWebView}. This extends the
  * {@link org.apache.cordova.engine.SystemWebViewEngine SystemWebViewEngine}
@@ -32,6 +32,6 @@ public final class CEMWebViewEngine extends SystemWebViewEngine {
      */
     public CEMWebViewEngine(Context context, CordovaPreferences preferences) {
         super(new CEMWebView(context), preferences);
-        MamSdk.getLogger().debug(TAG, "created");
+        Logger.getLogger(TAG).debug1(TAG, "created");
     }
 }

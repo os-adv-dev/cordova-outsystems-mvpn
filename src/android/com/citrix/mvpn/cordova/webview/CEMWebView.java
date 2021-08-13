@@ -5,14 +5,13 @@ import android.util.Log;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import com.citrix.sdk.appcore.api.MamSdk;
 import com.citrix.mvpn.cordova.webviewowner.MvpnWebViewOwner;
 import com.citrix.mvpn.cordova.webviewowner.MvpnWebViewOwnerImpl;
 import com.citrix.mvpn.cordova.webviewowner.OwnedMvpnWebView;
 import com.citrix.mvpn.cordova.webviewrequests.LoadData;
 import com.citrix.mvpn.cordova.webviewrequests.LoadUrl;
 import com.citrix.mvpn.cordova.webviewrequests.PostUrl;
-import com.citrix.sdk.logging.api.LoggingAPI;
+import com.citrix.sdk.logging.api.Logger;
 
 import org.apache.cordova.engine.SystemWebView;
 
@@ -36,7 +35,7 @@ import java.util.Map;
 public class CEMWebView extends SystemWebView implements OwnedMvpnWebView {
     protected static final String TAG = "MVPN-CDV-WebView";
     private static final String BLANK_URL = "about:blank";
-    private LoggingAPI logger = MamSdk.getLogger();
+    private Logger logger = Logger.getLogger(TAG);
 
     /**
      * Object that the Owner passes to this webview to track whether the
@@ -64,7 +63,7 @@ public class CEMWebView extends SystemWebView implements OwnedMvpnWebView {
      */
     @Override
     public void loadBlank() {
-        logger.debug10(TAG, "Loading blank page");
+        logger.debug10(TAG, "CEMWebView: Loading blank page");
         super.loadUrl(BLANK_URL);
     }
 
@@ -78,7 +77,7 @@ public class CEMWebView extends SystemWebView implements OwnedMvpnWebView {
             return;
         }
 
-        logger.debug10(TAG, String.format("loadUrl(%s)", url));
+        logger.debug10(TAG, String.format("CEMWebView: loadUrl(%s)", url));
         MvpnWebViewOwnerImpl.getInstance().processRequest(new LoadUrl(this, url));
     }
 
@@ -99,7 +98,7 @@ public class CEMWebView extends SystemWebView implements OwnedMvpnWebView {
             return;
         }
 
-        logger.debug10(TAG, String.format("loadUrl(%s, %s)", url, additionalHeaders.toString()));
+        logger.debug10(TAG, String.format("CEMWebView: loadUrl(%s, %s)", url, additionalHeaders.toString()));
         MvpnWebViewOwnerImpl.getInstance().processRequest(new LoadUrl(this, url, additionalHeaders));
     }
 
@@ -108,7 +107,7 @@ public class CEMWebView extends SystemWebView implements OwnedMvpnWebView {
      */
     @Override
     public void loadData(String data, String mimeType, String encoding) {
-        logger.debug10(TAG, String.format("loadData(%s, %s, %s)", data, mimeType, encoding));
+        logger.debug10(TAG, String.format("CEMWebView: loadData(%s, %s, %s)", data, mimeType, encoding));
         MvpnWebViewOwnerImpl.getInstance().processRequest(new LoadData(this, data, mimeType, encoding));
     }
 
@@ -117,7 +116,7 @@ public class CEMWebView extends SystemWebView implements OwnedMvpnWebView {
      */
     @Override
     public void loadDataWithBaseURL(String baseUrl, String data, String mimeType, String encoding, String failUrl) {
-        logger.debug10(TAG, String.format("loadDataWithBaseUrl(%s, %s, %s, %s, %s)", baseUrl, data, mimeType, encoding, failUrl));
+        logger.debug10(TAG, String.format("CEMWebView: loadDataWithBaseUrl(%s, %s, %s, %s, %s)", baseUrl, data, mimeType, encoding, failUrl));
         MvpnWebViewOwnerImpl.getInstance().processRequest(new LoadData(this, baseUrl, data, mimeType, encoding, failUrl));
     }
 
@@ -126,7 +125,7 @@ public class CEMWebView extends SystemWebView implements OwnedMvpnWebView {
      */
     @Override
     public void postUrl(String url, byte[] postData) {
-        logger.debug10(TAG, String.format("postUrl(%s, %s)", url, Arrays.toString(postData)));
+        logger.debug10(TAG, String.format("CEMWebView: postUrl(%s, %s)", url, Arrays.toString(postData)));
         MvpnWebViewOwnerImpl.getInstance().processRequest(new PostUrl(this, url, postData));
     }
 
@@ -135,7 +134,7 @@ public class CEMWebView extends SystemWebView implements OwnedMvpnWebView {
      */
     @Override
     public void tunnelRunningLoadUrl(String url) {
-        logger.debug10(TAG, String.format("Tunnel running: loadUrl(%s)", url));
+        logger.debug10(TAG, String.format("CEMWebView: Tunnel running: loadUrl(%s)", url));
         super.loadUrl(url);
     }
 
@@ -144,7 +143,7 @@ public class CEMWebView extends SystemWebView implements OwnedMvpnWebView {
      */
     @Override
     public void tunnelRunningLoadUrl(String url, Map<String, String> additionalHeaders) {
-        logger.debug10(TAG, String.format("Tunnel running: loadUrl(%s, %s)", url, additionalHeaders.toString()));
+        logger.debug10(TAG, String.format("CEMWebView: Tunnel running: loadUrl(%s, %s)", url, additionalHeaders.toString()));
         super.loadUrl(url, additionalHeaders);
     }
 
@@ -153,7 +152,7 @@ public class CEMWebView extends SystemWebView implements OwnedMvpnWebView {
      */
     @Override
     public void tunnelRunningLoadData(String data, String mimeType, String encoding) {
-        logger.debug10(TAG, String.format("Tunnel running: loadData(%s, %s, %s)", data, mimeType, encoding));
+        logger.debug10(TAG, String.format("CEMWebView: Tunnel running: loadData(%s, %s, %s)", data, mimeType, encoding));
         super.loadData(data, mimeType, encoding);
     }
 
@@ -162,7 +161,7 @@ public class CEMWebView extends SystemWebView implements OwnedMvpnWebView {
      */
     @Override
     public void tunnelRunningLoadDataWithBaseURL(String baseUrl, String data, String mimeType, String encoding, String failUrl) {
-        logger.debug10(TAG, String.format("Tunnel running: loadDataWithBaseURL(%s, %s, %s, %s, %s)", baseUrl, data, mimeType, encoding, failUrl));
+        logger.debug10(TAG, String.format("CEMWebView: Tunnel running: loadDataWithBaseURL(%s, %s, %s, %s, %s)", baseUrl, data, mimeType, encoding, failUrl));
         super.loadDataWithBaseURL(baseUrl, data, mimeType, encoding, failUrl);
     }
 
@@ -171,7 +170,7 @@ public class CEMWebView extends SystemWebView implements OwnedMvpnWebView {
      */
     @Override
     public void tunnelRunningPostUrl(String url, byte[] postData) {
-        logger.debug10(TAG, String.format("Tunnel running: postUrl(%s, %s)", url, Arrays.toString(postData)));
+        logger.debug10(TAG, String.format("CEMWebView: Tunnel running: postUrl(%s, %s)", url, Arrays.toString(postData)));
         super.postUrl(url, postData);
     }
 

@@ -8,13 +8,12 @@ import org.json.JSONObject;
 
 import java.util.HashMap;
 
-import com.citrix.sdk.appcore.api.MamSdk;
-import com.citrix.sdk.logging.api.LoggingAPI;
+import com.citrix.sdk.logging.api.Logger;
 
 public class MvpnFetchHelper {
 
     private static final String LOG_TAG = "MVPN-CDV-FetchHelper";
-    private static LoggingAPI logger = MamSdk.getLogger();
+    private static Logger logger = Logger.getLogger(LOG_TAG);
 
     public static HttpParams getFetchRequest(JSONArray data) throws ApiException {
         logger.debug10(LOG_TAG, "Within getFetchRequest()");

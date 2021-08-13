@@ -11,12 +11,11 @@ import org.json.JSONArray;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 
-import com.citrix.sdk.appcore.api.MamSdk;
-import com.citrix.sdk.logging.api.LoggingAPI;
+import com.citrix.sdk.logging.api.Logger;
 
 public class MvpnFetch extends CordovaPlugin {
     public static final String LOG_TAG = "MVPN-CDV-MvpnFetch";
-    private LoggingAPI logger = MamSdk.getLogger();
+    private Logger logger = Logger.getLogger(LOG_TAG);
 
     @Override
     public boolean execute(final String action, final JSONArray data, final CallbackContext callbackContext) {

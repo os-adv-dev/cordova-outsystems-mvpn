@@ -22,19 +22,24 @@
 		<clobbers target="mvpn.InAppBrowser.open"/>
 		<clobbers target="cemwindow.open"/>
 	</js-module>
-
-	<js-module src="www/outsystems.js" name="MAMSDK">
-		<!--call ceminappbrowser by saying in js "mvpn.InAppBrowser.open" or "cemwindow.open"-->
-		<clobbers target="mamsdk"/>
+	<js-module src="www/outsystems.js" name="OutsystemsMAM">
+		<!--call mvpnfetch by saying in js "mvpnFetch"-->
+		<clobbers target="outsystemsMAM"/>
 	</js-module>
-
-	<hook type="before_plugin_add" src="scripts/outsystems/npmInstall.js"/>
 
 	<!--android-->
 	<platform name="android">
 		<!-- IMPORTANT: this is the mdx wrapper utility file for android -->
 		<resource-file src="sdk/libs/android/managed-app-utility.jar" target="mdx/managed-app-utility.jar"/>
 
+		<hook type="before_plugin_install" src="scripts/outsystems/addDisplayName.js"/>
+		<!-- if the platform is added after the plugin is install -->
+		<hook type="after_platform_add" src="scripts/android/android_setup_mdx.js"/>
+
+		<!-- if the plugin is installed after the platform is added -->
+		<hook type="after_plugin_add" src="scripts/android/android_setup_mdx.js"/>
+
+		<hook type="before_compile" src="scripts/outsystems/UpdateMDXWithKeystore.js"/>
 		<hook type="before_compile" src="scripts/android/android_setup_mdx.js"/>
 		<!-- hook - this generates the mdx file for the user -->
 		<hook type="after_compile" src="scripts/android/android_generate_mdx.js"/>
@@ -44,6 +49,7 @@
 		<config-file target="/res/xml/config.xml" parent="/*">
 			<!--need to override which webviewengine is used-->
 			<preference name="webview" value="com.citrix.mvpn.cordova.webview.CEMWebViewEngine"/>
+			<preference name="AndroidXEnabled" value="true" />
 			<preference name="loadUrlTimeoutValue" value="60000" />
 			<!--declare fetch plugin-->
 			<feature name="MvpnFetch">
@@ -64,16 +70,22 @@
 		<framework src="src/android/dependencies.gradle" custom="true" type="gradleReference"/>
 
 		<!-- use resource-file widget to get them moved to the right place; can't be done in the gradle file even though it depends on them -->
-		<resource-file src="sdk/libs/android/mvpnsdk.aar" target="libs/mvpnsdk.aar"/>
-		<resource-file src="sdk/libs/android/coresdk.aar" target="libs/coresdk.aar"/>
+		<resource-file src="sdk/libs/android/analyticssdk.aar" target="libs/analyticssdk.aar"/>
+		<resource-file src="sdk/libs/android/appcoresdk.aar" target="libs/appcoresdk.aar"/>
+		<resource-file src="sdk/libs/android/apputils.aar" target="libs/apputils.aar"/>
+		<resource-file src="sdk/libs/android/authmanagerlitelib.aar" target="libs/authmanagerlitelib.aar"/>
 		<resource-file src="sdk/libs/android/authsdk.aar" target="libs/authsdk.aar"/>
-		<resource-file src="sdk/libs/android/configsdk.aar" target="libs/configsdk.aar"/>
-		<resource-file src="sdk/libs/android/loggersdk.aar" target="libs/loggersdk.aar"/>
 		<resource-file src="sdk/libs/android/citrix-loggersdk.aar" target="libs/citrix-loggersdk.aar"/>
+		<resource-file src="sdk/libs/android/configsdk.aar" target="libs/configsdk.aar"/>
+		<resource-file src="sdk/libs/android/coresdk.aar" target="libs/coresdk.aar"/>
 		<resource-file src="sdk/libs/android/cryptoapi.aar" target="libs/cryptoapi.aar"/>
-		<resource-file src="sdk/libs/android/securestorage.aar" target="libs/securestorage.aar"/>
-		<resource-file src="sdk/libs/android/worxsdk.aar" target="libs/worxsdk.aar"/>
 		<resource-file src="sdk/libs/android/googleanalyticssdk.aar" target="libs/googleanalyticssdk.aar"/>
+		<resource-file src="sdk/libs/android/loggingsdk.aar" target="libs/loggingsdk.aar"/>
+		<resource-file src="sdk/libs/android/mamsdk.aar" target="libs/mamsdk.aar"/>
+		<resource-file src="sdk/libs/android/mamservicessdk.aar" target="libs/mamservicessdk.aar"/>
+		<resource-file src="sdk/libs/android/mvpnsdk.aar" target="libs/mvpnsdk.aar"/>
+		<resource-file src="sdk/libs/android/securestorage.aar" target="libs/securestorage.aar"/>
+		<resource-file src="sdk/libs/android/workspacehelperlib.aar" target="libs/workspacehelperlib.aar"/>
 
 		<!--WebViewOwnership stuff-->
 		<source-file src="src/android/com/citrix/mvpn/cordova/webviewowner/MvpnWebViewOwner.java" target-dir="src/com/citrix/mvpn/cordova/webviewowner/"/>
@@ -118,91 +130,5 @@
 		<source-file src="src/android/com/citrix/mvpn/cordova/fetch/MvpnFetch.java" target-dir="src/com/citrix/mvpn/cordova/fetch/"/>
 		<source-file src="src/android/com/citrix/mvpn/cordova/fetch/MvpnFetchHelper.java" target-dir="src/com/citrix/mvpn/cordova/fetch/"/>
 		<source-file src="src/android/com/citrix/mvpn/cordova/fetch/OkHttpHandler.java" target-dir="src/com/citrix/mvpn/cordova/fetch/"/>
-	</platform>
-
-	<!-- iOS -->
-	<platform name="ios">
-
-		<hook></hook>
-		<!--this stuff gets put into the app's config file-->
-		<config-file target="/res/xml/config.xml" parent="/*">
-			<!--need to override which webviewengine is used>
-			<preference name="webview" value="com.citrix.mvpn.cordova.webview.CEMWebViewEngine"/>
-			<preference name="loadUrlTimeoutValue" value="60000" /-->
-			<!--declare fetch plugin-->
-			<feature name="MvpnFetch">
-				<param name="ios-package" value="MvpnFetch"/>
-                <param name="onload" value="true" />
-			</feature>
-			<!--declare inappbrowser plugin-->
-			<feature name="CEMInAppBrowser">
-				<param name="ios-package" value="CEMInAppBrowser"/>
-                <param name="onload" value="true" />
-			</feature>
-		</config-file>
-
-		<preference name="BUNDLEID"/>
-		<preference name="PACKAGEID"/>
-		<preference name="URLSCHEME"/>
-		<preference name="TEAMID"/>
-		<preference name="STOREURL"/>
-
-		<hook type="after_plugin_install" src="scripts/ios/addBuildPhase.js"/>
-		
-		<hook type="after_plugin_add" src="scripts/ios/copyTools.js"/>
-
-		<hook type="after_platform_add" src="scripts/ios/addBuildPhase.js"/>
-
-		<hook type="after_plugin_install" src="scripts/ios/changeBuildSettings.js"/>
-
-		<hook type="after_compile" src="scripts/outsystems/UploadMdx.js"/>
-		
-		<config-file target="*-Info.plist" parent="CFBundleURLTypes">
-			<array>
-				<dict>
-					<key>CFBundleTypeRole</key>
-					<string>Editor</string>
-					<key>CFBundleURLName</key>
-					<string>$BUNDLEID</string><!-- bundleid-->
-					<key>CFBundleURLSchemes</key>
-					<array>
-						<string>$URLSCHEME</string><!-- com.citrix.sso.packageId-->
-					</array>
-				</dict>
-			</array>
-		</config-file>
-		<config-file target="*-Debug.plist" parent="keychain-access-groups">
-			<array>
-				<string>$(AppIdentifierPrefix)$BUNDLEID</string>
-				<string>$(AppIdentifierPrefix)com.citrix.mdx</string>
-			</array>
-		</config-file>
-
-		<config-file target="*-Release.plist" parent="keychain-access-groups">
-			<array>
-				<string>$(AppIdentifierPrefix)$BUNDLEID</string>
-				<string>$(AppIdentifierPrefix)com.citrix.mdx</string>
-			</array>
-		</config-file>
-
-		
-		<framework src="sdk/libs/ios/CitrixLogger.framework" embed="true" custom="true"/>
-		<framework src="sdk/libs/ios/CTXMAMAppCore.framework" embed="true" custom="true"/>
-		<framework src="sdk/libs/ios/CTXMAMCompliance.framework" embed="true" custom="true"/>
-		<framework src="sdk/libs/ios/CTXMAMContainment.framework" embed="true" custom="true"/>
-		<framework src="sdk/libs/ios/CTXMAMCore.framework" embed="true" custom="true"/>
-		<framework src="sdk/libs/ios/CTXMAMNetwork.framework" embed="true" custom="true"/>
-		<framework src="sdk/libs/ios/CTXMAMLocalAuth.framework" embed="true" custom="true"/>
-		
-		<source-file src="sdk/libs/ios/CitrixLogger.framework" target-dir="lib" framework="true"/>
-		<source-file src="sdk/libs/ios/CTXMAMAppCore.framework" target-dir="lib" framework="true"/>
-		<source-file src="sdk/libs/ios/CTXMAMCompliance.framework" target-dir="lib" framework="true"/>
-		<source-file src="sdk/libs/ios/CTXMAMContainment.framework" target-dir="lib" framework="true"/>
-		<source-file src="sdk/libs/ios/CTXMAMCore.framework" target-dir="lib" framework="true"/>
-		<source-file src="sdk/libs/ios/CTXMAMNetwork.framework" target-dir="lib" framework="true"/>
-
-		<header-file src="src/ios/AppDelegate+mvpn.h"/>
-		<source-file src="src/ios/AppDelegate+mvpn.m"/>
-
 	</platform>
 </plugin>

@@ -3,8 +3,7 @@ var base64;
 const path = require("path")
 const fs = require('fs');
 const { log } = require('../common');
-
-const pluginId = "cordova-plugin-mvpn";
+const common = require('../common');
 
 module.exports = function(context) {
 
@@ -25,9 +24,14 @@ module.exports = function(context) {
 	}
 	mode = 'debug';
 
-    const projectName = encodeURIComponent(getConfigParser(context, path.join(context.opts.projectRoot, 'config.xml')).name());
+    let pkg = JSON.parse(fs.readFileSync(common.PackageJson).toString());
+	if (!pkg.hasOwnProperty('displayName')) {
+		log('No display name defined in package.json. Are you sure this is a Cordova project?', 'red');
+		return 0;
+	}
+    let projectName = pkg['displayName'];
 
-    const plugin = JSON.parse(fs.readFileSync(path.join(context.opts.projectRoot,"plugins", 'fetch.json'),"utf8"))[pluginId];
+    const plugin = JSON.parse(fs.readFileSync(path.join(context.opts.projectRoot,"plugins", 'fetch.json'),"utf8"))[common.PluginId];
 
     var encryptedAuth = plugin.variables.CREDENTIALS;
     if(encryptedAuth.includes(":")){
@@ -75,22 +79,4 @@ function isCordovaAbove (context, version) {
 	console.log(cordovaVersion);
 	var sp = cordovaVersion.split('.');
 	return parseInt(sp[0]) >= version;
-}
-
-function getConfigParser(context, config){
-    var semver;
-
-    if(isCordovaAbove(context,8)){
-        semver = require('semver');
-	}else{
-        semver = context.requireCordovaModule('semver');
-	}
-
-    if(semver.lt(context.opts.cordova.version, '5.4.0')) {
-      ConfigParser = context.requireCordovaModule('cordova-lib/src/ConfigParser/ConfigParser');
-    } else {
-      ConfigParser = context.requireCordovaModule('cordova-common/src/ConfigParser/ConfigParser');
-    }
-  
-    return new ConfigParser(config);
 }
