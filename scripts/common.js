@@ -1,13 +1,16 @@
 const path = require('path');
+const uuidgen = require('uuid');
 
 module.exports.MdxJson = 'mdx.json';
-//Outsystems has the build.json in this folder
 module.exports.BuildJson = 'build.json';
 module.exports.PackageJson = 'package.json';
 module.exports.ConfigXml = 'config.xml';
 module.exports.PluginId = 'cordova-plugin-mvpn';
 module.exports.Entitlements = path.join('platforms', 'ios', 'mdx.entitlements');
+module.exports.PluginId = 'cordova-plugin-mvpn';
 
+// function that just generates a random number
+module.exports.rand = () => uuidgen().split('-').join('');
 
 /**
  * Possibly prints a message, possibly in a certain color, but definitely prints a new line.

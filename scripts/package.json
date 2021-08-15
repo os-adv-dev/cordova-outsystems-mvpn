@@ -1,5 +1,6 @@
 {
 	"dependencies": {
+		"uuid": "3.3.2",
 		"xcode": "^3.0.1",
 		"plist": "^3.0.1",
 		"axios": "0.21.1",

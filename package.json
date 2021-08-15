@@ -1,26 +1,37 @@
 {
-  "name": "cordova-plugin-mvpn",
-  "version": "21.6.0",
-  "description": "Cordova Plugin for Citrix CoreSDK. ",
-  "cordova": {
-    "id": "cordova-plugin-mvpn",
-    "platforms": [
-      "ios"
-    ]
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/citrix/citrix-mam-sdks"
-  },
-  "keywords": [
-    "ecosystem:cordova",
-    "cordova-ios"
-  ],
-  "author": "Citrix",
-  "license": "https://developer.cloud.com/citrix-api-terms-of-use",
-  "dependencies": {
-		"xcode": "^3.0.1",
 		"plist": "^3.0.1",
+		"xcode": "^3.0.1",
+    "name": "cordova-plugin-mvpn",
+    "version": "21.7.0",
+    "description": "Useful plugin for developing Cordova apps with Citrix Endpoint Management's MicroVPN",
+    "types": "./types/index.d.ts",
+    "cordova": {
+        "id": "cordova-plugin-mvpn",
+        "platforms": [
+            "android"
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/citrix/citrix-mam-sdks"
+    },
+    "bugs": {
+        "url": "todo"
+    },
+    "keywords": [
+        "cordova",
+        "citrix",
+        "mvpn",
+        "microvpn",
+        "micro",
+        "vpn",
+        "endpoint",
+        "management"
+    ],
+    "author": "Citrix Systems, Inc.",
+    "license": "https://developer.cloud.com/citrix-api-terms-of-use",
+    "dependencies": {
+        "uuid": "^3.3.3",
 		"axios": "0.21.1",
 		"base-64": "1.0.0"
 	}
