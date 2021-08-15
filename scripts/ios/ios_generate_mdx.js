@@ -36,13 +36,12 @@ module.exports = function(context) {
 			return done();
 		}
 	}
-
-    let res3 = require('child_process').spawnSync("readlink", [platformize_path(get_fatal_with_fallback(preferred, fallback, 'app'))]);
-	let appLocation = '"'+res3.stdout.toString()+'"'
+	
+    
 	let cmd = get_fatal_with_fallback(preferred, fallback, 'toolkit_dir');
 	let args = [
 		'SdkPrep',
-		'-in', appLocation,
+		'-in', platformize_path(get_fatal_with_fallback(preferred, fallback, 'app')),
 		'-out', platformize_path(get_fatal_with_fallback(preferred, fallback, 'mdx')),
 		'-storeURL', get_fatal_with_fallback(preferred, fallback, 'storeUrl'),
 		'-appType', get_fatal_with_fallback(preferred, fallback, 'appType'),

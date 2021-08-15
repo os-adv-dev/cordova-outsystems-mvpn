@@ -11,6 +11,6 @@ let pkg = JSON.parse(fs.readFileSync(common.PackageJson).toString());
 	}
 let app_name = pkg['displayName'];
 
-fs.copyFileSync("platforms/ios/"+app_name+"/Entitlements-Release.plist","platforms/ios/mdx.entitlements");
+fs.copyFileSync("platforms/ios/"+app_name+"/Entitlements-Release.plist","platforms/ios/"+app_name+".entitlements");
 
 log('===== FINISHED COPYING ENTITLEMENTS =====', 'cyan');

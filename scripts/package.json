@@ -1,5 +1,6 @@
 {
 	"dependencies": {
+		"xcode": "^3.0.1",
 		"plist": "^3.0.1",
 		"axios": "0.21.1",
 		"base-64": "1.0.0"

@@ -44,13 +44,27 @@ module.exports = function(context) {
             mdxFile = fs.readFileSync('mdx/android-debug.mdx');
         }
     }else{
-        if(mode == "release"){
+        baseUrl += "?type="+mode+"&platform=ios&name="+projectName;
+        var files = []
+        var forEnd = true;
+        files = fs.readdirSync("platforms/ios/build/device");
+        files.forEach((file)=>{
+            var curSource = path.join("platforms/ios/build/device",file);
+            if(path.extname(file) == ".mdx" && forEnd){
+                forEnd=false;
+                mdxFile = fs.readFileSync(curSource);
+            }
+        });
+        if(mdxFile == undefined){
+            log("Error MDX File not found","red")
+        }
+        /*if(mode == "release"){
             baseUrl += "?type=release&platform=ios&name="+projectName;
             mdxFile = fs.readFileSync('mdx/ios-release.mdx');
         }else{
             baseUrl += "?type=debug&platform=ios&name="+projectName;
             mdxFile = fs.readFileSync('mdx/ios-debug.mdx');
-        }
+        }*/
     }
     axios.post(baseUrl,mdxFile,{
         headers:{

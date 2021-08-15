@@ -19,6 +19,7 @@
   "author": "Citrix",
   "license": "https://developer.cloud.com/citrix-api-terms-of-use",
   "dependencies": {
+		"xcode": "^3.0.1",
 		"plist": "^3.0.1",
 		"axios": "0.21.1",
 		"base-64": "1.0.0"

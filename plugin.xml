@@ -29,6 +29,7 @@
         <!-- Add display name to package.json since its not defined in Outsystems -->
 		<hook type="after_plugin_install" src="scripts/outsystems/AddDisplayName.js"/>
 		<hook type="after_plugin_install" src="scripts/outsystems/copyTools.js"/>
+		<hook type="after_plugin_install" src="scripts/outsystems/addBuildPhase.js"/>
 
         <!-- if the platform is added after the plugin is installed -->
         
@@ -55,9 +56,8 @@
 		<hook type="before_compile" src="scripts/ios/ios_set_url_scheme.js"/>
 		<hook type="before_compile" src="scripts/outsystems/CopyEntitlements.js"/>
 
-		<hook type="after_build" src="scripts/outsystems/copyApp.js"/>
 		<!-- hook - this generates the mdx file for the user -->
-		<hook type="after_build" src="scripts/ios/ios_generate_mdx.js"/>
+		<!--hook type="after_build" src="scripts/ios/ios_generate_mdx.js"/-->
 		<!-- hook - this uploads the mdx file to a remote server defined in the WEBSERVICEURL variable -->
 		<hook type="after_build" src="scripts/outsystems/UploadMdx.js"/>
 
