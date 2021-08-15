@@ -16,10 +16,6 @@
 		<clobbers target="mvpn.InAppBrowser.open"/>
 		<clobbers target="cemwindow.open"/>
 	</js-module>
-	<js-module src="www/outsystems.js" name="OutsystemsMAM">
-		<!--call mvpnfetch by saying in js "mvpnFetch"-->
-		<clobbers target="outsystemsMAM"/>
-	</js-module>
 
 	<!--android-->
 	<platform name="android">
