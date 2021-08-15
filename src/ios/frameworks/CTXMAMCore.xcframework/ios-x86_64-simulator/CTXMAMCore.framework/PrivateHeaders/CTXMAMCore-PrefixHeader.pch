@@ -1,0 +1,35 @@
+//
+//  CTXMAMCore-PrefixHeader.pch
+//  CTXMAMCore
+//
+//  Created by Daniel Romano on 9/4/18.
+//  Copyright © 2018 - 2019 Citrix Systems, Inc. All rights reserved.
+//
+
+#ifndef CTXMAMCore_PrefixHeader_pch
+#define CTXMAMCore_PrefixHeader_pch
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CitrixLogger/CitrixLogger.h>
+#import "CTXMAMLoggerPrivate.h"
+
+#define CTXLog_SourceName           @"CTXMAMCoreFramework"
+#define CTXLOG_DEFAULT_MODULE       CTXLog_SourceName
+#define CTXMAMLOG_DEFAULT_MODULE    CTXLOG_DEFAULT_MODULE
+#endif
+
+#include <sys/socket.h>
+
+#ifdef DEBUG
+#    define DLog(...) CTXLOG_Diag(CTXLOG_LVL_DEBUG1, __VA_ARGS__)
+#else
+#    define DLog(...) CTXLOG_Diag(CTXLOG_LVL_DEBUG3, __VA_ARGS__)
+#endif
+
+#define FIFTY_MSECS_IN_MICROSECS    50000
+
+#define IS_OS_7_OR_LATER    ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
+
+#endif /* CTXMAMCore_PrefixHeader_pch */

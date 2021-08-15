@@ -2,9 +2,8 @@ var axios;
 var base64;
 const path = require("path")
 const fs = require('fs');
-const { log } = require('../common');
-
-const pluginId = "cordova-plugin-mvpn";
+const common = require('../common');
+const log = common.log;
 
 module.exports = function(context) {
 
@@ -24,17 +23,16 @@ module.exports = function(context) {
 	    mode = 'release';
 	}
 	mode = 'debug';
+    const projectName = encodeURIComponent(JSON.parse(fs.readFileSync(common.PackageJson).toString()).displayName);
 
-    const projectName = encodeURIComponent(getConfigParser(context, path.join(context.opts.projectRoot, 'config.xml')).name());
-
-    const plugin = JSON.parse(fs.readFileSync(path.join(context.opts.projectRoot,"plugins", 'fetch.json'),"utf8"))[pluginId];
+    const plugin = JSON.parse(fs.readFileSync(path.join(context.opts.projectRoot,"plugins", 'fetch.json'),"utf8"))[common.PluginId];
 
     var encryptedAuth = plugin.variables.CREDENTIALS;
     if(encryptedAuth.includes(":")){
         encryptedAuth = "Basic "+base64.encode(encryptedAuth);
     }
     var baseUrl = plugin.variables.WEBSERVICEURL;
-
+    
     //let form = new FormData();
     var mdxFile;
     if(fs.existsSync("platforms/android")){
@@ -57,6 +55,16 @@ module.exports = function(context) {
                 mdxFile = fs.readFileSync(curSource);
             }
         });
+        if(mdxFile == undefined){
+            log("Error MDX File not found","red")
+        }
+        /*if(mode == "release"){
+            baseUrl += "?type=release&platform=ios&name="+projectName;
+            mdxFile = fs.readFileSync('mdx/ios-release.mdx');
+        }else{
+            baseUrl += "?type=debug&platform=ios&name="+projectName;
+            mdxFile = fs.readFileSync('mdx/ios-debug.mdx');
+        }*/
     }
     axios.post(baseUrl,mdxFile,{
         headers:{
@@ -75,22 +83,4 @@ function isCordovaAbove (context, version) {
 	console.log(cordovaVersion);
 	var sp = cordovaVersion.split('.');
 	return parseInt(sp[0]) >= version;
-}
-
-function getConfigParser(context, config){
-    var semver;
-
-    if(isCordovaAbove(context,8)){
-        semver = require('semver');
-	}else{
-        semver = context.requireCordovaModule('semver');
-	}
-
-    if(semver.lt(context.opts.cordova.version, '5.4.0')) {
-      ConfigParser = context.requireCordovaModule('cordova-lib/src/ConfigParser/ConfigParser');
-    } else {
-      ConfigParser = context.requireCordovaModule('cordova-common/src/ConfigParser/ConfigParser');
-    }
-  
-    return new ConfigParser(config);
 }
