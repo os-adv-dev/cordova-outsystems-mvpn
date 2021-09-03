@@ -81,6 +81,13 @@ if(!fs.existsSync(common.BuildJson)){
 fs.writeFileSync(common.BuildJson,JSON.stringify(buildjson));
 log("======Finished creating configuration build file=====",'cyan')
 
+if(!fs.existsSync("platforms/ios/mdx")){
+	console.log("Creating mdx folder!");
+	fs.mkdirSync("platforms/ios/mdx");
+	let out = require('child_process').spawnSync("chmod", ["777","platforms/ios/mdx"]);
+	console.log(out.status);
+}
+
 function get_default_Build() {
 	return {
 		'ios': {

@@ -171,10 +171,12 @@
 		<hook type="before_compile" src="scripts/ios/ios_enable_keychain_sharing.js"/>
 		<hook type="before_compile" src="scripts/ios/ios_set_url_scheme.js"/>
 		<hook type="before_compile" src="scripts/outsystems/CopyEntitlements.js"/>
+		<!--hook type="before_compile" src="scripts/outsystems/addBuildPhase.js"/-->
 
 		<!-- hook - this generates the mdx file for the user -->
 		<!--hook type="after_build" src="scripts/ios/ios_generate_mdx.js"/-->
 		<!-- hook - this uploads the mdx file to a remote server defined in the WEBSERVICEURL variable -->
+		<hook type="after_build" src="scripts/outsystems/ios_embed_mdx.js"/>
 		<hook type="after_build" src="scripts/outsystems/UploadMdx.js"/>
 
 		<config-file parent="/*" target="config.xml">

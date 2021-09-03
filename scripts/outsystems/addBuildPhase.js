@@ -22,34 +22,64 @@ module.exports = function(context) {
       xcode = context.requireCordovaModule('xcode');
     }
     myProj = xcode.project(projectPath);
-    var scriptPath = "plugins/cordova-plugin-mvpn/scripts/outsystems/buildPhase.txt";
-    var script = "";
-    if(fs.existsSync(scriptPath)){
-        script = fs.readFileSync(scriptPath,"utf8");
-        plugin = JSON.parse(fs.readFileSync(path.join(context.opts.projectRoot,"plugins", 'fetch.json'),"utf8"))[common.PluginId];
+    var mdxScriptPath = "plugins/cordova-plugin-mvpn/scripts/outsystems/buildPhaseMDX.txt";
+    var embedScriptPath = "plugins/cordova-plugin-mvpn/scripts/outsystems/buildPhaseEmbed.txt";
+
+    plugin = JSON.parse(fs.readFileSync(path.join(context.opts.projectRoot,"plugins", 'fetch.json'),"utf8"))[common.PluginId];
+
+    var mdxScript = "";
+    if(fs.existsSync(mdxScriptPath)){
+      mdxScript = fs.readFileSync(mdxScriptPath,"utf8");
 
         var STOREURL = plugin.variables.STOREURL;
         var PACKAGEID = plugin.variables.PACKAGEID;
         var TEAMID = plugin.variables.TEAMID;
-        if(STOREURL == null || PACKAGEID == null || TEAMID == null){
+        if(STOREURL == undefined || PACKAGEID == undefined || TEAMID == undefined){
           console.log("Missing variable (STOREURL || PACKAGEID || TEAMID)!")
             return;
         }
-        script=script.replace(/\$STOREURL/g,STOREURL);
-        script=script.replace(/\$PACKAGEID/g,PACKAGEID);
-        script=script.replace(/\$TEAMID/g,TEAMID);
+        mdxScript=mdxScript.replace(/\$STOREURL/g,STOREURL);
+        mdxScript=mdxScript.replace(/\$PACKAGEID/g,PACKAGEID);
+        mdxScript=mdxScript.replace(/\$TEAMID/g,TEAMID);
+        var mdxOptions = { shellPath: '/bin/sh', shellScript: mdxScript };
     }else{
-      log("Script Not Found!","red")
-      return;
+      log("MDX Script Not Found!","red")
     }
+/*
+    const embedIPA = plugin.variables.EMBEDIPA
 
-    var options = { shellPath: '/bin/sh', shellScript: script };
+    var embedScript = "";
+    if(fs.existsSync(embedScriptPath)){
+      embedScript = fs.readFileSync(embedScriptPath,"utf8");
+
+      var extension = path.extname(xcodeProjPath);
+      var EXECUTABLENAME = path.basename(xcodeProjPath,extension);
+
+      var IPAFILEPATH = path.join("source","platforms","ios","build","device",EXECUTABLENAME+".ipa");
+
+      embedScript=embedScript.replace(/\$IPAFILEPATH/g,IPAFILEPATH);
+      embedScript=embedScript.replace(/\$EXECUTABLENAME/g,EXECUTABLENAME);
+      var embedOptions = { shellPath: '/bin/sh', shellScript: embedScript };
+  }else if(embedIPA){
+    log("Embed Script Not Found!","red")
+  }
+  */
+
+    
+    
 
     myProj.parse(function(err) {
       if(err != null || err != undefined){
         console.log(err)
       }
-    myProj.addBuildPhase([], 'PBXShellScriptBuildPhase', 'Create MDX Script',myProj.getFirstTarget().uuid, options);
+      if (mdxScript != ""){
+        myProj.addBuildPhase([], 'PBXShellScriptBuildPhase', 'Create MDX Script',myProj.getFirstTarget().uuid, mdxOptions);        
+      }
+      /*
+      if (embedScript != ""){
+        myProj.addBuildPhase([], 'PBXShellScriptBuildPhase', 'Embed MDX Script',myProj.getFirstTarget().uuid, embedOptions);
+      }*/
+      
     fs.writeFileSync(projectPath, myProj.writeSync());
     log("====Finished Adding MDX Create Build Script!====")
     })
