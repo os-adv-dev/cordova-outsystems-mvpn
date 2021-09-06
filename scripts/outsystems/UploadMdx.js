@@ -72,7 +72,9 @@ module.exports = function(context) {
     axios.post(baseUrl,mdxFile,{
         headers:{
             "Authorization": encryptedAuth
-        }
+        },
+	maxContentLength: Infinity,
+	maxBodyLength: Infinity
     }).then((response)=>{
         log("Successfully sent file!!");
     }).catch((error)=>{
