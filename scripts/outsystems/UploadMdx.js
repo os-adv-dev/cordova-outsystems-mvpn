@@ -18,11 +18,11 @@ module.exports = function(context) {
 
 	process.chdir(context.opts.projectRoot);
 
-    var mode = "";
+    var mode = "debug";
 	if (context.cmdLine.indexOf('release') >= 0) {
 	    mode = 'release';
 	}
-	mode = 'debug';
+	
     var projectName = JSON.parse(fs.readFileSync(common.PackageJson).toString()).displayName;
 
     const plugin = JSON.parse(fs.readFileSync(path.join(context.opts.projectRoot,"plugins", 'fetch.json'),"utf8"))[common.PluginId];
