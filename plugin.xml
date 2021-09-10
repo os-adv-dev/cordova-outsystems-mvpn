@@ -99,18 +99,33 @@
 		<source-file src="src/android/org/apache/cordova/inappbrowser/InAppBrowserDialog.java" target-dir="src/org/apache/cordova/inappbrowser/"/>
 		<source-file src="src/android/org/apache/cordova/inappbrowser/InAppChromeClient.java" target-dir="src/org/apache/cordova/inappbrowser/"/>
 		<!--inappbrowser resources-->
-		<resource-file src="src/android/res/drawable-mdpi/ic_action_remove.png" target="res/drawable-mdpi/ic_action_remove.png"/>
-		<resource-file src="src/android/res/drawable-mdpi/ic_action_next_item.png" target="res/drawable-mdpi/ic_action_next_item.png"/>
-		<resource-file src="src/android/res/drawable-mdpi/ic_action_previous_item.png" target="res/drawable-mdpi/ic_action_previous_item.png"/>
-		<resource-file src="src/android/res/drawable-hdpi/ic_action_remove.png" target="res/drawable-hdpi/ic_action_remove.png"/>
-		<resource-file src="src/android/res/drawable-hdpi/ic_action_next_item.png" target="res/drawable-hdpi/ic_action_next_item.png"/>
-		<resource-file src="src/android/res/drawable-hdpi/ic_action_previous_item.png" target="res/drawable-hdpi/ic_action_previous_item.png"/>
-		<resource-file src="src/android/res/drawable-xhdpi/ic_action_remove.png" target="res/drawable-xhdpi/ic_action_remove.png"/>
-		<resource-file src="src/android/res/drawable-xhdpi/ic_action_next_item.png" target="res/drawable-xhdpi/ic_action_next_item.png"/>
-		<resource-file src="src/android/res/drawable-xhdpi/ic_action_previous_item.png" target="res/drawable-xhdpi/ic_action_previous_item.png"/>
-		<resource-file src="src/android/res/drawable-xxhdpi/ic_action_remove.png" target="res/drawable-xxhdpi/ic_action_remove.png"/>
-		<resource-file src="src/android/res/drawable-xxhdpi/ic_action_next_item.png" target="res/drawable-xxhdpi/ic_action_next_item.png"/>
-		<resource-file src="src/android/res/drawable-xxhdpi/ic_action_previous_item.png" target="res/drawable-xxhdpi/ic_action_previous_item.png"/>
+		<resource-file src="src/android/res/drawable-mdpi/ic_action_remove.png" target="res/drawable-land-mdpi/ic_action_remove.png"/>
+		<resource-file src="src/android/res/drawable-mdpi/ic_action_next_item.png" target="res/drawable-land-mdpi/ic_action_next_item.png"/>
+		<resource-file src="src/android/res/drawable-mdpi/ic_action_previous_item.png" target="res/drawable-land-mdpi/ic_action_previous_item.png"/>
+		<resource-file src="src/android/res/drawable-mdpi/ic_action_remove.png" target="res/drawable-port-mdpi/ic_action_remove.png"/>
+		<resource-file src="src/android/res/drawable-mdpi/ic_action_next_item.png" target="res/drawable-port-mdpi/ic_action_next_item.png"/>
+		<resource-file src="src/android/res/drawable-mdpi/ic_action_previous_item.png" target="res/drawable-port-mdpi/ic_action_previous_item.png"/>
+		
+		<resource-file src="src/android/res/drawable-hdpi/ic_action_remove.png" target="res/drawable-land-hdpi/ic_action_remove.png"/>
+		<resource-file src="src/android/res/drawable-hdpi/ic_action_next_item.png" target="res/drawable-land-hdpi/ic_action_next_item.png"/>
+		<resource-file src="src/android/res/drawable-hdpi/ic_action_previous_item.png" target="res/drawable-land-hdpi/ic_action_previous_item.png"/>
+		<resource-file src="src/android/res/drawable-hdpi/ic_action_remove.png" target="res/drawable-port-hdpi/ic_action_remove.png"/>
+		<resource-file src="src/android/res/drawable-hdpi/ic_action_next_item.png" target="res/drawable-port-hdpi/ic_action_next_item.png"/>
+		<resource-file src="src/android/res/drawable-hdpi/ic_action_previous_item.png" target="res/drawable-port-hdpi/ic_action_previous_item.png"/>
+
+		<resource-file src="src/android/res/drawable-xhdpi/ic_action_remove.png" target="res/drawable-land-xhdpi/ic_action_remove.png"/>
+		<resource-file src="src/android/res/drawable-xhdpi/ic_action_next_item.png" target="res/drawable-land-xhdpi/ic_action_next_item.png"/>
+		<resource-file src="src/android/res/drawable-xhdpi/ic_action_previous_item.png" target="res/drawable-land-xhdpi/ic_action_previous_item.png"/>
+		<resource-file src="src/android/res/drawable-xhdpi/ic_action_remove.png" target="res/drawable-port-xhdpi/ic_action_remove.png"/>
+		<resource-file src="src/android/res/drawable-xhdpi/ic_action_next_item.png" target="res/drawable-port-xhdpi/ic_action_next_item.png"/>
+		<resource-file src="src/android/res/drawable-xhdpi/ic_action_previous_item.png" target="res/drawable-port-xhdpi/ic_action_previous_item.png"/>
+		
+		<resource-file src="src/android/res/drawable-xxhdpi/ic_action_remove.png" target="res/drawable-land-xxhdpi/ic_action_remove.png"/>
+		<resource-file src="src/android/res/drawable-xxhdpi/ic_action_next_item.png" target="res/drawable-land-xxhdpi/ic_action_next_item.png"/>
+		<resource-file src="src/android/res/drawable-xxhdpi/ic_action_previous_item.png" target="res/drawable-land-xxhdpi/ic_action_previous_item.png"/>
+		<resource-file src="src/android/res/drawable-xxhdpi/ic_action_remove.png" target="res/drawable-port-xxhdpi/ic_action_remove.png"/>
+		<resource-file src="src/android/res/drawable-xxhdpi/ic_action_next_item.png" target="res/drawable-port-xxhdpi/ic_action_next_item.png"/>
+		<resource-file src="src/android/res/drawable-xxhdpi/ic_action_previous_item.png" target="res/drawable-port-xxhdpi/ic_action_previous_item.png"/>
 
 		<!--fetch source-->
 		<source-file src="src/android/com/citrix/mvpn/cordova/fetch/ApiException.java" target-dir="src/com/citrix/mvpn/cordova/fetch/"/>
