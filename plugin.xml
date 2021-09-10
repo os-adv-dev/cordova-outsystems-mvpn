@@ -99,33 +99,26 @@
 		<source-file src="src/android/org/apache/cordova/inappbrowser/InAppBrowserDialog.java" target-dir="src/org/apache/cordova/inappbrowser/"/>
 		<source-file src="src/android/org/apache/cordova/inappbrowser/InAppChromeClient.java" target-dir="src/org/apache/cordova/inappbrowser/"/>
 		<!--inappbrowser resources-->
-		<resource-file src="src/android/res/drawable-mdpi/ic_action_remove.png" target="res/drawable-land-mdpi/ic_action_remove.png"/>
-		<resource-file src="src/android/res/drawable-mdpi/ic_action_next_item.png" target="res/drawable-land-mdpi/ic_action_next_item.png"/>
-		<resource-file src="src/android/res/drawable-mdpi/ic_action_previous_item.png" target="res/drawable-land-mdpi/ic_action_previous_item.png"/>
-		<resource-file src="src/android/res/drawable-mdpi/ic_action_remove.png" target="res/drawable-port-mdpi/ic_action_remove.png"/>
-		<resource-file src="src/android/res/drawable-mdpi/ic_action_next_item.png" target="res/drawable-port-mdpi/ic_action_next_item.png"/>
-		<resource-file src="src/android/res/drawable-mdpi/ic_action_previous_item.png" target="res/drawable-port-mdpi/ic_action_previous_item.png"/>
+		<resource-file src="src/android/res/drawable-mdpi/ic_action_remove.png" target="res/drawable-mdpi/ic_action_remove.png"/>
+		<resource-file src="src/android/res/drawable-mdpi/ic_action_next_item.png" target="res/drawable-mdpi/ic_action_next_item.png"/>
+		<resource-file src="src/android/res/drawable-mdpi/ic_action_previous_item.png" target="res/drawable-mdpi/ic_action_previous_item.png"/>
+		<resource-file src="src/android/res/drawable-hdpi/ic_action_remove.png" target="res/drawable-hdpi/ic_action_remove.png"/>
+		<resource-file src="src/android/res/drawable-hdpi/ic_action_next_item.png" target="res/drawable-hdpi/ic_action_next_item.png"/>
+		<resource-file src="src/android/res/drawable-hdpi/ic_action_previous_item.png" target="res/drawable-hdpi/ic_action_previous_item.png"/>
+		<resource-file src="src/android/res/drawable-xhdpi/ic_action_remove.png" target="res/drawable-xhdpi/ic_action_remove.png"/>
+		<resource-file src="src/android/res/drawable-xhdpi/ic_action_next_item.png" target="res/drawable-xhdpi/ic_action_next_item.png"/>
+		<resource-file src="src/android/res/drawable-xhdpi/ic_action_previous_item.png" target="res/drawable-xhdpi/ic_action_previous_item.png"/>
+		<resource-file src="src/android/res/drawable-xxhdpi/ic_action_remove.png" target="res/drawable-xxhdpi/ic_action_remove.png"/>
+		<resource-file src="src/android/res/drawable-xxhdpi/ic_action_next_item.png" target="res/drawable-xxhdpi/ic_action_next_item.png"/>
+		<resource-file src="src/android/res/drawable-xxhdpi/ic_action_previous_item.png" target="res/drawable-xxhdpi/ic_action_previous_item.png"/>
 		
-		<resource-file src="src/android/res/drawable-hdpi/ic_action_remove.png" target="res/drawable-land-hdpi/ic_action_remove.png"/>
-		<resource-file src="src/android/res/drawable-hdpi/ic_action_next_item.png" target="res/drawable-land-hdpi/ic_action_next_item.png"/>
-		<resource-file src="src/android/res/drawable-hdpi/ic_action_previous_item.png" target="res/drawable-land-hdpi/ic_action_previous_item.png"/>
-		<resource-file src="src/android/res/drawable-hdpi/ic_action_remove.png" target="res/drawable-port-hdpi/ic_action_remove.png"/>
-		<resource-file src="src/android/res/drawable-hdpi/ic_action_next_item.png" target="res/drawable-port-hdpi/ic_action_next_item.png"/>
-		<resource-file src="src/android/res/drawable-hdpi/ic_action_previous_item.png" target="res/drawable-port-hdpi/ic_action_previous_item.png"/>
-
-		<resource-file src="src/android/res/drawable-xhdpi/ic_action_remove.png" target="res/drawable-land-xhdpi/ic_action_remove.png"/>
-		<resource-file src="src/android/res/drawable-xhdpi/ic_action_next_item.png" target="res/drawable-land-xhdpi/ic_action_next_item.png"/>
-		<resource-file src="src/android/res/drawable-xhdpi/ic_action_previous_item.png" target="res/drawable-land-xhdpi/ic_action_previous_item.png"/>
-		<resource-file src="src/android/res/drawable-xhdpi/ic_action_remove.png" target="res/drawable-port-xhdpi/ic_action_remove.png"/>
-		<resource-file src="src/android/res/drawable-xhdpi/ic_action_next_item.png" target="res/drawable-port-xhdpi/ic_action_next_item.png"/>
-		<resource-file src="src/android/res/drawable-xhdpi/ic_action_previous_item.png" target="res/drawable-port-xhdpi/ic_action_previous_item.png"/>
-		
-		<resource-file src="src/android/res/drawable-xxhdpi/ic_action_remove.png" target="res/drawable-land-xxhdpi/ic_action_remove.png"/>
-		<resource-file src="src/android/res/drawable-xxhdpi/ic_action_next_item.png" target="res/drawable-land-xxhdpi/ic_action_next_item.png"/>
-		<resource-file src="src/android/res/drawable-xxhdpi/ic_action_previous_item.png" target="res/drawable-land-xxhdpi/ic_action_previous_item.png"/>
-		<resource-file src="src/android/res/drawable-xxhdpi/ic_action_remove.png" target="res/drawable-port-xxhdpi/ic_action_remove.png"/>
-		<resource-file src="src/android/res/drawable-xxhdpi/ic_action_next_item.png" target="res/drawable-port-xxhdpi/ic_action_next_item.png"/>
-		<resource-file src="src/android/res/drawable-xxhdpi/ic_action_previous_item.png" target="res/drawable-port-xxhdpi/ic_action_previous_item.png"/>
+		<!-- fixes splashscreen resources - MABS - MissingDefaultResource -->
+		<config-file target="../../config.xml" parent="/widget/android">
+			<splash density="mdpi" src="res/android/drawable-land-xhdpi/screen.png"/>
+            <splash density="hdpi" src="res/android/drawable-land-xhdpi/screen.png"/>
+			<splash density="xhdpi" src="res/android/drawable-land-xhdpi/screen.png"/>
+			<splash density="xxhdpi" src="res/android/drawable-land-xhdpi/screen.png"/>
+        </config-file>
 
 		<!--fetch source-->
 		<source-file src="src/android/com/citrix/mvpn/cordova/fetch/ApiException.java" target-dir="src/com/citrix/mvpn/cordova/fetch/"/>
@@ -135,6 +128,8 @@
 		<source-file src="src/android/com/citrix/mvpn/cordova/fetch/MvpnFetch.java" target-dir="src/com/citrix/mvpn/cordova/fetch/"/>
 		<source-file src="src/android/com/citrix/mvpn/cordova/fetch/MvpnFetchHelper.java" target-dir="src/com/citrix/mvpn/cordova/fetch/"/>
 		<source-file src="src/android/com/citrix/mvpn/cordova/fetch/OkHttpHandler.java" target-dir="src/com/citrix/mvpn/cordova/fetch/"/>
+
+		<dependency id="cordova-custom-config" version="^5.1.0" />
 	</platform>
     
     <js-module name="CtxMAMCoreBridge" src="www/CtxMAMCoreBridge.js">
