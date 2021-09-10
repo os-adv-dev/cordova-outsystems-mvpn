@@ -113,7 +113,7 @@
 		<resource-file src="src/android/res/drawable-xxhdpi/ic_action_previous_item.png" target="res/drawable-xxhdpi/ic_action_previous_item.png"/>
 		
 		<!-- fixes splashscreen resources - MABS - MissingDefaultResource -->
-		<config-file target="../../config.xml" parent="/widget/android">
+		<config-file target="../../config.xml" parent="/widget/platform[@name='android']">
 			<splash density="mdpi" src="res/android/drawable-land-xhdpi/screen.png"/>
             <splash density="hdpi" src="res/android/drawable-land-xhdpi/screen.png"/>
 			<splash density="xhdpi" src="res/android/drawable-land-xhdpi/screen.png"/>
