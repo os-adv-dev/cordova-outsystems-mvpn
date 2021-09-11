@@ -18,7 +18,8 @@ module.exports = function(context) {
 
 	process.chdir(context.opts.projectRoot);
 
-    var mode = "debug";
+
+    var mode = 'debug';
 	if (context.cmdLine.indexOf('release') >= 0) {
 	    mode = 'release';
 	}
