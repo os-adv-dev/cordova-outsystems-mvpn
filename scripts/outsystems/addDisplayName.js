@@ -14,8 +14,10 @@ let pkg = JSON.parse(fs.readFileSync(common.PackageJson).toString());
 var ConfigParser = require("cordova-common").ConfigParser;
 var appConfig = new ConfigParser('config.xml');
 projectName = appConfig.name();
+projectId = appConfig.packageName();
 
 pkg["displayName"] = projectName;
+pkg["name"] = projectId;
 
 fs.writeFileSync(common.PackageJson,JSON.stringify(pkg));
 
