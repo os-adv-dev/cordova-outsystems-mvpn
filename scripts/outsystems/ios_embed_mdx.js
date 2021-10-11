@@ -10,7 +10,7 @@ const log = common.log;
 module.exports = function(context) {
 	const plugin = JSON.parse(fs.readFileSync(path.join(context.opts.projectRoot,"plugins", 'fetch.json'),"utf8"))[common.PluginId];
 	const embedIPA = plugin.variables.EMBEDIPA
-	if(embedIPA){
+	if(embedIPA.toLowerCase() === "true"){
 		log();
 		log('===== Embeding MDX FOR IOS =====', 'cyan');
 
