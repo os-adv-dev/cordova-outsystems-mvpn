@@ -51,7 +51,7 @@ module.exports = function(context) {
 		console.log(out2.stdout.toString());
         var file = ""
         var embedIPA = plugin.variables.EMBEDIPA;
-        if(embedIPA){
+        if(embedIPA.toLowerCase() === "true"){
             file = path.join("platforms/ios/mdx",projectName+"-exported.mdx")
         }else{
             file = path.join("platforms/ios/mdx",projectName+".mdx");
