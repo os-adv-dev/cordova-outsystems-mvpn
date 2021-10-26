@@ -2,8 +2,8 @@
 //  CTXMAMAppCore.h
 //  CTXMAMAppCore
 //
-//  Created by Daniel Romano on 4/22/20.
-//  Copyright © 2020 Daniel Romano. All rights reserved.
+//  Citrix iOS MAM SDK Public Header
+//  Copyright © 2020-2021 Citrix Systems, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

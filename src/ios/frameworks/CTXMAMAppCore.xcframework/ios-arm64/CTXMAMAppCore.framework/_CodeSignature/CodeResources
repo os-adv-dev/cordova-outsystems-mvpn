@@ -6,15 +6,15 @@
 	<dict>
 		<key>AMLImageAssetBundle.bundle/Assets.car</key>
 		<data>
-		WiolWI7iFseW3MrUNHPFUDzWFaY=
+		qQVhaOewgc6l9cf2gI5tU6ZW+TM=
 		</data>
 		<key>AMLImageAssetBundle.bundle/Info.plist</key>
 		<data>
-		x05muV+qvbRNXD3C5wJNcFmluIc=
+		K5OIkIKIy5/qUlv0/WLniYPGy3A=
 		</data>
 		<key>AMLLocalizationStringBundle.bundle/Info.plist</key>
 		<data>
-		qc1Lx8kVaYnMvU7V/S1wjEALDCw=
+		wFLlFNCP4wktBMg6280DuaERmdE=
 		</data>
 		<key>AMLLocalizationStringBundle.bundle/da.lproj/Localizable.strings</key>
 		<dict>
@@ -144,39 +144,47 @@
 		</dict>
 		<key>Headers/CTXMAMAppCore-Swift.h</key>
 		<data>
-		yF8shewDvlpGWYhqnPlNsS5ZFk0=
+		jC21omuSAI5wR9e0LrJl3ebHN58=
 		</data>
 		<key>Headers/CTXMAMAppCore.h</key>
 		<data>
-		sLDJ6O/nBbStwhIaiAhSW7srNsw=
+		0ujPYtnCdGqcGUUlUBs55X0o0NY=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		16OKTsXvaFZWHp2BjifVVUnb0Jo=
+		fJb5YjlapM1yXdBP1y4cU7zBYZU=
+		</data>
+		<key>Modules/CTXMAMAppCore.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
+		<data>
+		55MNbAnvnfPHWi33p2ckXkmwZbM=
+		</data>
+		<key>Modules/CTXMAMAppCore.swiftmodule/Project/arm64.swiftsourceinfo</key>
+		<data>
+		55MNbAnvnfPHWi33p2ckXkmwZbM=
 		</data>
 		<key>Modules/CTXMAMAppCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		eRlw8Fbyy12vdLtqiCfv28NLoXE=
+		xGMkFzpR3OmSA9mV0qb5lvuR4wY=
 		</data>
 		<key>Modules/CTXMAMAppCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		8KmbGAOLMIsX70H+eXzKvSdOxPc=
+		+oEDh2udj2HYXEhKkg8b5iEzY+4=
 		</data>
 		<key>Modules/CTXMAMAppCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		nFrcHLgtFyaEOeoLJjJxuCOpqj8=
+		FHvDn+6MneaKio02aWCuOD1+hKM=
 		</data>
 		<key>Modules/CTXMAMAppCore.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		eRlw8Fbyy12vdLtqiCfv28NLoXE=
+		xGMkFzpR3OmSA9mV0qb5lvuR4wY=
 		</data>
 		<key>Modules/CTXMAMAppCore.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		8KmbGAOLMIsX70H+eXzKvSdOxPc=
+		+oEDh2udj2HYXEhKkg8b5iEzY+4=
 		</data>
 		<key>Modules/CTXMAMAppCore.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		nFrcHLgtFyaEOeoLJjJxuCOpqj8=
+		FHvDn+6MneaKio02aWCuOD1+hKM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -206,6 +214,10 @@
 		<data>
 		AVgwjsgIi7VUBE32n2OEEJPsfBk=
 		</data>
+		<key>PrivateHeaders/CTXMAMAppCoreConstantsPrivate.h</key>
+		<data>
+		2HaPetqmobhy584PxvQ+WoBDYUk=
+		</data>
 		<key>PrivateHeaders/CTXMAMAppState.h</key>
 		<data>
 		GdvkhlkiQg3zkxYBdR4XiP72Nyw=
@@ -220,7 +232,7 @@
 		</data>
 		<key>PrivateHeaders/CTXMAMConfigManager+AppCore.h</key>
 		<data>
-		pQFgzX0hc4N5xkVD3ufaPnTqcxA=
+		uvIzrpyjWdiKAVsADW1DaGJ8fNs=
 		</data>
 		<key>PrivateHeaders/CTXMAMLogCollector.h</key>
 		<data>
@@ -228,7 +240,7 @@
 		</data>
 		<key>PrivateHeaders/CTXMAMLogonManager.h</key>
 		<data>
-		fjo/KG9jRe1UQsnMxeW5BkqNGcE=
+		gdYnYfM4F5Kh+4qMYadbR40wHlw=
 		</data>
 		<key>PrivateHeaders/CTXMAMLogonManagerPrivateTypes.h</key>
 		<data>
@@ -240,11 +252,11 @@
 		</data>
 		<key>PrivateHeaders/CTXMAMServerAppData.h</key>
 		<data>
-		pPgo9qYhOHWux5rfJTYdvM1tjw4=
+		kPWuvgz8K10ixS4610a5eu4LDHc=
 		</data>
 		<key>PrivateHeaders/CTXMAMServerAppDataRequest.h</key>
 		<data>
-		iXZYpocW94VJHMTbNz+qsAW1LW4=
+		kM7BRP5eyoB3U5xjxJwyEUAK3YU=
 		</data>
 		<key>PrivateHeaders/CTXMAMServerDataRequestDispatcher.h</key>
 		<data>
@@ -268,11 +280,11 @@
 		</data>
 		<key>PrivateHeaders/CtxSingleSignOn.h</key>
 		<data>
-		aJM0/ryAafMAdYDQHXG2jJhHnac=
+		n8XSIG7Sp2WnWh615Uvf/prNq0Y=
 		</data>
 		<key>PrivateHeaders/IntuneConfigProvider.h</key>
 		<data>
-		/H9nFgsAvI5OnHkwAYt8J4qUX7M=
+		QNuB4TQos38Xj8h4uOz1ASYhSkI=
 		</data>
 		<key>PrivateHeaders/IntuneSupport.h</key>
 		<data>
@@ -297,21 +309,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JFN51t3M368FKaRLeJXaaSuJ/ZI0qaMlIclRkcMGNCQ=
+			a3OauodoDHvxNjIWE4iWsJLcHDm8KEjhEQ1qGFgzRxw=
 			</data>
 		</dict>
 		<key>AMLImageAssetBundle.bundle/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rjZxnnzzZtCfDebN5+QyN2bU0F3eTkjUu0hOlEdZL8k=
+			yZlOxBCa6m3ienzWumY0mk0S/eX4EHFEiFUmCWujiy4=
 			</data>
 		</dict>
 		<key>AMLLocalizationStringBundle.bundle/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ceIHGyGloESNrrTunHWCucHJXYIk5FUYbzDA7Di+My0=
+			snr9FC54YbxdNHX2lBuOm7D45q3bvMBmvPFWBZ4sZ9U=
 			</data>
 		</dict>
 		<key>AMLLocalizationStringBundle.bundle/da.lproj/Localizable.strings</key>
@@ -444,56 +456,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Tt3nrC1VpiryVMxnlhg0HqN7c8SWn3Abu5HgCP2bogo=
+			W8OKI5pj8YO8p52FpbnSe9nrE04ppzmXsr+eHhuSFxc=
 			</data>
 		</dict>
 		<key>Headers/CTXMAMAppCore.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2cZv9Ne5HMPJFZuoFditlQ+YAxFTRoMJ2MflGHutgFw=
+			FMuCWPDjr6VnD84PdWj6fx0kbHZnaWGVEzHZF8TQggg=
+			</data>
+		</dict>
+		<key>Modules/CTXMAMAppCore.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			B5FbCLyP483J+6XSAjSJILuIBYjzyLqDJkRwcEGScwY=
+			</data>
+		</dict>
+		<key>Modules/CTXMAMAppCore.swiftmodule/Project/arm64.swiftsourceinfo</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			B5FbCLyP483J+6XSAjSJILuIBYjzyLqDJkRwcEGScwY=
 			</data>
 		</dict>
 		<key>Modules/CTXMAMAppCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EZtxpDmHBXH0XsGe56/HJ8oa6IKHjfO5EoVubxIPYEg=
+			0sBKiaRjuCAm0f/3ld/vQBQp+S2D5F1oX44xmrZF+P8=
 			</data>
 		</dict>
 		<key>Modules/CTXMAMAppCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uXvxMeowzHCem15TZVibF/W0LLwi0li7YPzMYWBzYAM=
+			kU+1GrK1GqlnkkGGOcl2ex2hr8KBnGyqtnvSL1HMsfY=
 			</data>
 		</dict>
 		<key>Modules/CTXMAMAppCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZifkQa3uZDbrXJSvOkeX+3HB2aGcW6xJpfRkas3awWo=
+			7a76tpPyyAMisj0z/m8GNqWfVadT26Q+99NTPCs9q5s=
 			</data>
 		</dict>
 		<key>Modules/CTXMAMAppCore.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EZtxpDmHBXH0XsGe56/HJ8oa6IKHjfO5EoVubxIPYEg=
+			0sBKiaRjuCAm0f/3ld/vQBQp+S2D5F1oX44xmrZF+P8=
 			</data>
 		</dict>
 		<key>Modules/CTXMAMAppCore.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uXvxMeowzHCem15TZVibF/W0LLwi0li7YPzMYWBzYAM=
+			kU+1GrK1GqlnkkGGOcl2ex2hr8KBnGyqtnvSL1HMsfY=
 			</data>
 		</dict>
 		<key>Modules/CTXMAMAppCore.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZifkQa3uZDbrXJSvOkeX+3HB2aGcW6xJpfRkas3awWo=
+			7a76tpPyyAMisj0z/m8GNqWfVadT26Q+99NTPCs9q5s=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -545,6 +571,13 @@
 			iDbrJXY/MkNhd5oCFYGPw8NgMZfPG2XkyX4yrEWINyA=
 			</data>
 		</dict>
+		<key>PrivateHeaders/CTXMAMAppCoreConstantsPrivate.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			r1UOAIwfrr0td+6ia+eBk8NYLRY7GsyHPWzxCajOuPY=
+			</data>
+		</dict>
 		<key>PrivateHeaders/CTXMAMAppState.h</key>
 		<dict>
 			<key>hash2</key>
@@ -570,7 +603,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			I+uIzR+0SkH8hUxP2hXBM9llJIz6SJ3i6sBvsm6T5oA=
+			SHdsbdoawi/cCo/8Z2Yo+o36s6cNPALqm3ViSjN9QLU=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CTXMAMLogCollector.h</key>
@@ -584,7 +617,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eu/PWVplI9E4n3R+vJNuHNCCW3OJEON4zfVsdoOmCOg=
+			K+bgbYPH4ODPmFHOoI7JN6qIA9FBT0AQcOISLXtA3zI=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CTXMAMLogonManagerPrivateTypes.h</key>
@@ -605,14 +638,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YdDm9mHDC/YGA4bG2WnfrwlfRnuCsHJCSjmG0zDIayQ=
+			ebxFc32fRNXf9XM0hA+vkBx+a515+vvTK0hQYqLR1es=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CTXMAMServerAppDataRequest.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fNw2vYiLVmZXb4gtMxLUR+HT4nrtSfk49xSYeJIscHY=
+			3eNzIHnTKkTNPtxubd+IDMqE+RgKLmIkhgIC8J2XGJA=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CTXMAMServerDataRequestDispatcher.h</key>
@@ -654,14 +687,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Fpu802Xk+jkEkL+08iku790nFWpJTx+jtmgc3ZXX24M=
+			YO5IOm6lY0CatspWeYKIs477T5RFOh31a00/bNvDJqg=
 			</data>
 		</dict>
 		<key>PrivateHeaders/IntuneConfigProvider.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sKg3b/g3vyy8RF/bKkLkoi6BgfYVgnZCoI+n/u4Hjgs=
+			VubX0bKudakkgdZTCfY5OCg2B2jmR/PFn2PAtQPn/cc=
 			</data>
 		</dict>
 		<key>PrivateHeaders/IntuneSupport.h</key>
