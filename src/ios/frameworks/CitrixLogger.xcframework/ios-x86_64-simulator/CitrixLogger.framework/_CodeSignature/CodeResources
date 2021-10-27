@@ -42,7 +42,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		NzMkV1CO14dzq1vhLA/fSrBZac4=
+		OQ6JJrM+bKkOI98GQo3UpwH/uk8=
 		</data>
 		<key>en.lproj/InfoPlist.strings</key>
 		<dict>
@@ -58,10 +58,6 @@
 	<dict>
 		<key>Headers/CitrixLogger.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			YcbeqzQSZL21stAWnmkkTRMHOxc=
-			</data>
 			<key>hash2</key>
 			<data>
 			Al69139fmz8pYFi00oFVfkqMO8h0SyvprH4e7/nezNg=
@@ -69,10 +65,6 @@
 		</dict>
 		<key>Headers/CtxLogManager.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			rpLNTpYCf5uXLAzzNhdOfTOsol0=
-			</data>
 			<key>hash2</key>
 			<data>
 			cVPw/pEkOlSF4moa/w58ZJODI27CgIKsomwbsa8ZthU=
@@ -80,10 +72,6 @@
 		</dict>
 		<key>Headers/CtxLogger.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			gPF+jWtox0muII1DJUIUexQYJsY=
-			</data>
 			<key>hash2</key>
 			<data>
 			m6dsMDEZTpQgIRp0QGF2kCz+kvt9QmN1mGt8zK48nws=
@@ -91,10 +79,6 @@
 		</dict>
 		<key>Headers/CtxLoggerCMacros.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			7rIjJu+hxwCvaam84oNXpeWP58s=
-			</data>
 			<key>hash2</key>
 			<data>
 			rY6geoppGMdngOUofQC4vAT1CG/vTKI0MiEh9nin6Yo=
@@ -102,10 +86,6 @@
 		</dict>
 		<key>Headers/CtxLoggerConstants.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			1iRK0wXIIRONlQJAf8acUDoa8JU=
-			</data>
 			<key>hash2</key>
 			<data>
 			A3TGGhAbfkK21nOm7Gat4QtTCLG/4Q1aYBjNVW+6cAE=
@@ -113,10 +93,6 @@
 		</dict>
 		<key>Headers/CtxLoggerObjCMacros.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			lt+77bWflTLHlZ5+XzctlPbdCKM=
-			</data>
 			<key>hash2</key>
 			<data>
 			oATBHx78YF6obhFzmVqoRC4AIXXbFEpiEBYCUclm0oQ=
@@ -124,10 +100,6 @@
 		</dict>
 		<key>Headers/NSFileManager+CtxLoggerExtension.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			pv/GVMQDT/uwGWiiDWn9ozry1wo=
-			</data>
 			<key>hash2</key>
 			<data>
 			8bxDjygVfm+8PiMMuyOyF1FvFYYriQeEejtC9+tg26o=
@@ -135,10 +107,6 @@
 		</dict>
 		<key>Headers/NSURL+CtxLoggerExtension.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			9chE2Oq81IydJQc3W1Sv+WZy/kE=
-			</data>
 			<key>hash2</key>
 			<data>
 			8AgXMEQCwbiu4u/ndtAQf5SKa47Qxlsc8YmrAd7xxfQ=
@@ -146,10 +114,6 @@
 		</dict>
 		<key>Headers/UIDevice+CtxLoggerExtension.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			41QtFkPNb1UNNhBEXF9EVYAO+Aw=
-			</data>
 			<key>hash2</key>
 			<data>
 			CDiyzt4OCELu2oGwB6nHyTlQN4H98CsgHQmfvMg3GM4=
@@ -157,10 +121,6 @@
 		</dict>
 		<key>en.lproj/InfoPlist.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			zmV6UqBSo6r1NOz798vd5O4zTBA=
-			</data>
 			<key>hash2</key>
 			<data>
 			kmHsztpgjvF0JW5f3HdMHm49z1M0CcG8OT1JDQHHE/E=

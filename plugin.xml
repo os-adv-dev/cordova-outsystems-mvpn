@@ -19,6 +19,8 @@
 
 	<!--android-->
 	<platform name="android">
+		<dependency id="cordova-plugin-inappbrowser" url="https://github.com/OutSystems/cordova-plugin-inappbrowser.git#4.0.0-OS7"/>
+
 		<!-- IMPORTANT: this is the mdx wrapper utility file for android -->
 		<resource-file src="sdk/libs/android/managed-app-utility.jar" target="mdx/managed-app-utility.jar"/>
 
@@ -95,11 +97,10 @@
 		<!--inappbrowser source-->
 		<source-file src="src/android/com/citrix/mvpn/cordova/inappbrowser/ManagedWebView.java" target-dir="src/com/citrix/mvpn/cordova/inappbrowser/"/>
 		<source-file src="src/android/com/citrix/mvpn/cordova/inappbrowser/CEMInAppBrowser.java" target-dir="src/com/citrix/mvpn/cordova/inappbrowser/"/>
-		<!-- Commented to fix a conflict with the InAppBrowser plugin already used in ADNOC's app
-		<source-file src="src/android/org/apache/cordova/inappbrowser/InAppBrowser.java" target-dir="src/org/apache/cordova/inappbrowser/"/>
-		<source-file src="src/android/org/apache/cordova/inappbrowser/InAppBrowserDialog.java" target-dir="src/org/apache/cordova/inappbrowser/"/>
-		<source-file src="src/android/org/apache/cordova/inappbrowser/InAppChromeClient.java" target-dir="src/org/apache/cordova/inappbrowser/"/>
-		-->
+		<!-- Commented to fix a conflict with the InAppBrowser plugin already used -->
+		<!--<source-file src="src/android/org/apache/cordova/inappbrowser/InAppBrowser.java" target-dir="src/org/apache/cordova/inappbrowser/"/> -->
+		<!--<source-file src="src/android/org/apache/cordova/inappbrowser/InAppBrowserDialog.java" target-dir="src/org/apache/cordova/inappbrowser/"/> -->
+		<!--<source-file src="src/android/org/apache/cordova/inappbrowser/InAppChromeClient.java" target-dir="src/org/apache/cordova/inappbrowser/"/> -->
 		<!--inappbrowser resources-->
 		<resource-file src="src/android/res/drawable-mdpi/ic_action_remove.png" target="res/drawable-mdpi/ic_action_remove.png"/>
 		<resource-file src="src/android/res/drawable-mdpi/ic_action_next_item.png" target="res/drawable-mdpi/ic_action_next_item.png"/>

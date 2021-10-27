@@ -2,8 +2,8 @@
 //  CTXMAMNetwork.h
 //  CTXMAMNetwork
 //
-//  Created by Shikha Kejariwal on 7/16/18.
-//  Copyright © 2018 - 2019 Citrix Systems Inc. All rights reserved.
+//  Citrix iOS MAM SDK Public Header
+//  Copyright © 2018-2021 Citrix Systems, Inc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
