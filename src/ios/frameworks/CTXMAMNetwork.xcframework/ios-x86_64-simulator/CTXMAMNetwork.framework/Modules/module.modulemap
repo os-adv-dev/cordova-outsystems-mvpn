@@ -1,6 +1,0 @@
-framework module CTXMAMNetwork {
-  umbrella header "CTXMAMNetwork.h"
-
-  export *
-  module * { export * }
-}
