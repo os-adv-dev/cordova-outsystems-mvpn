@@ -218,9 +218,9 @@
         </config-file>
 
 		<!--sdk dependencies-->
-        <framework src="src/ios/frameworks/CTXMAMCore.xcframework/ios-arm64/CitrixLogger.framework" custom="true" embed="true" />
+        <framework src="src/ios/frameworks/CTXMAMCore.xcframework/ios-arm64/CTXMAMCore.framework" custom="true" embed="true" />
         <framework src="src/ios/frameworks/CTXMAMAppCore.xcframework/ios-arm64/CTXMAMAppCore.framework" custom="true" embed="true" />
-        <framework src="src/ios/frameworks/CitrixLogger.xcframeworkios-arm64/CTXMAMCore.framework" custom="true" embed="true" />
+        <framework src="src/ios/frameworks/CitrixLogger.xcframework/ios-arm64/CitrixLogger.framework" custom="true" embed="true" />
 		<framework src="src/ios/frameworks/CTXMAMContainment.xcframework/ios-arm64/CTXMAMContainment.framework" custom="true" embed="true"/>
 		<framework src="src/ios/frameworks/CTXMAMCompliance.xcframework/ios-arm64/CTXMAMCompliance.framework" custom="true" embed="true"/>
         <framework src="src/ios/frameworks/CTXMAMNetwork.xcframework/ios-arm64/CTXMAMNetwork.framework" custom="true" embed="true"/>	
