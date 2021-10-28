@@ -218,23 +218,23 @@
         </config-file>
 
 		<!--sdk dependencies-->
-        <framework src="src/ios/frameworks/CTXMAMCore.xcframework" custom="true" embed="true" />
-        <framework src="src/ios/frameworks/CTXMAMAppCore.xcframework" custom="true" embed="true" />
-        <framework src="src/ios/frameworks/CitrixLogger.xcframework" custom="true" embed="true" />
-		<framework src="src/ios/frameworks/CTXMAMContainment.xcframework" custom="true" embed="true"/>
-		<framework src="src/ios/frameworks/CTXMAMCompliance.xcframework" custom="true" embed="true"/>
-        <framework src="src/ios/frameworks/CTXMAMNetwork.xcframework" custom="true" embed="true"/>	
-        <framework src="src/ios/frameworks/CTXMAMLocalAuth.xcframework" custom="true" embed="true"/>
+        <framework src="src/ios/frameworks/CTXMAMCore.xcframework/ios-arm64/CitrixLogger.framework" custom="true" embed="true" />
+        <framework src="src/ios/frameworks/CTXMAMAppCore.xcframework/ios-arm64/CTXMAMAppCore.framework" custom="true" embed="true" />
+        <framework src="src/ios/frameworks/CitrixLogger.xcframeworkios-arm64/CTXMAMCore.framework" custom="true" embed="true" />
+		<framework src="src/ios/frameworks/CTXMAMContainment.xcframework/ios-arm64/CTXMAMContainment.framework" custom="true" embed="true"/>
+		<framework src="src/ios/frameworks/CTXMAMCompliance.xcframework/ios-arm64/CTXMAMCompliance.framework" custom="true" embed="true"/>
+        <framework src="src/ios/frameworks/CTXMAMNetwork.xcframework/ios-arm64/CTXMAMNetwork.framework" custom="true" embed="true"/>	
+        <framework src="src/ios/frameworks/CTXMAMLocalAuth.xcframework/ios-arm64/CTXMAMLocalAuth.framework" custom="true" embed="true"/>
 		
 
 		<!-- this adds the dependencies to link Binary -->
-		<source-file src="src/ios/frameworks/CitrixLogger.xcframework" target-dir="lib" framework="true"/>
-		<source-file src="src/ios/frameworks/CTXMAMAppCore.xcframework" target-dir="lib" framework="true"/>
-		<source-file src="src/ios/frameworks/CTXMAMCore.xcframework" target-dir="lib" framework="true"/>
-		<source-file src="src/ios/frameworks/CTXMAMContainment.xcframework" target-dir="lib" framework="true"/>
-		<source-file src="src/ios/frameworks/CTXMAMCompliance.xcframework" target-dir="lib" framework="true"/>
-		<source-file src="src/ios/frameworks/CTXMAMNetwork.xcframework" target-dir="lib" framework="true"/>	
-		<source-file src="src/ios/frameworks/CTXMAMLocalAuth.xcframework" target-dir="lib" framework="true"/>
+		<source-file src="src/ios/frameworks/CitrixLogger.xcframework/ios-arm64/CitrixLogger.framework" target-dir="lib" framework="true"/>
+		<source-file src="src/ios/frameworks/CTXMAMAppCore.xcframework/ios-arm64/CTXMAMAppCore.framework" target-dir="lib" framework="true"/>
+		<source-file src="src/ios/frameworks/CTXMAMCore.xcframework/ios-arm64/CTXMAMCore.framework" target-dir="lib" framework="true"/>
+		<source-file src="src/ios/frameworks/CTXMAMContainment.xcframework/ios-arm64/CTXMAMContainment.framework" target-dir="lib" framework="true"/>
+		<source-file src="src/ios/frameworks/CTXMAMCompliance.xcframework/ios-arm64/CTXMAMCompliance.framework" target-dir="lib" framework="true"/>
+		<source-file src="src/ios/frameworks/CTXMAMNetwork.xcframework/ios-arm64/CTXMAMNetwork.framework" target-dir="lib" framework="true"/>	
+		<source-file src="src/ios/frameworks/CTXMAMLocalAuth.xcframework/ios-arm64/CTXMAMLocalAuth.framework" target-dir="lib" framework="true"/>
         
         <!--Apple dependencies-->
         <framework src="Foundation.framework" />
