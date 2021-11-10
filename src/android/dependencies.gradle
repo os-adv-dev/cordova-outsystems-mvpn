@@ -64,7 +64,7 @@ dependencies {
 	androidTestImplementation "androidx.test:rules:$test_runner_version"
 }
 
-ext.cdvMinSdkVersion = 24
+ext.cdvMinSdkVersion = 26
 
 android {
 	ndkVersion '21.3.6528147'
